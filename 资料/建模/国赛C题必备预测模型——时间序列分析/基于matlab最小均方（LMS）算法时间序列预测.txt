@@ -1,0 +1,107 @@
+%% Mackey Glass Time Series Prediction Using Least Mean Square (LMS)
+% Author: 紫极神光
+clc
+clear all
+close all
+
+%% Loading Time series data
+% I generated a series y(t) for t = 0,1, . . . ,3000, using
+% mackey glass series equation with the following configurations:
+% b = 0.1, a = 0.2, Tau = 20, and the initial conditions y(t - Tau) = 0.
+load Dataset\Data.mat 
+time_steps=2;
+teacher_forcing=1; % recurrent ARMA modelling with forced desired input after defined time steps 
+%% Training and Testing datasets
+% For training
+Tr=Data(100:2500,1);    % Selecting a Interval of series data t = 100~2500
+
+% For testing
+Ts=Data(2500:3000,1);   % Selecting a Interval of series data t = 2500~3000
+Ys(Ts)=Data(Ts,2);      % Selecting a chuck of series data y(t)
+
+%% LMS Parameters
+
+eta=5e-3;       % Learning rate
+M=1;            % Order of LMS filter
+
+
+MSE=[];         % Initial mean squared error (MSE)
+
+%% Learning weights of LMS (Training)
+tic % start
+for t=Tr(1):Tr(end)-time_steps
+    U(1:end-1)=U(2:end);    % Shifting of tap window
+    
+    if (teacher_forcing==1)
+        if rem(t,time_steps)==0 || (t==Tr(1))
+            U(end)=Yr(t);           % Input (past/current samples)
+        else
+            U(end)=Yp(t-1);          % Input (past/current samples)          
+        end
+    else
+        U(end)=Yr(t);           % Input (past/current samples)
+    end
+ 
+  
+    e(t)=Yr(t+time_steps)-Yp(t);        % Error in predicted output
+
+    W=W+eta*e(t)*U;     % Weight update rule of LMS
+    
+  
+end
+training_time=toc; % total time including training and calculation of MSE
+
+%% Prediction of a next outcome of series using previous samples (Testing)
+tic % start
+U=U*0;  % Reinitialization of taps (optional)
+for t=Ts(1):Ts(end)-time_steps+1
+    U(1:end-1)=U(2:end);    % Shifting of tap window
+
+    if (teacher_forcing==1)
+        if rem(t,time_steps)==0 || (t==Ts(1))
+            U(end)=Ys(t);           % Input (past/current samples)
+        else
+            U(end)=Yp(t-1);          % Input (past/current samples)          
+        end
+    else
+     
+    
+    
+    Yp(t)=W'*U;             % Calculating output (future value)
+    e(t)=Ys(t+time_steps-1)-Yp(t);        % Error in predicted output
+
+    E(t)=e(t).^2;   % Current mean squared error (MSE)
+end
+testing_time=toc; % total time including testing and calculation of MSE
+
+%% Results
+figure(1)
+plot(Tr,10*log10(E(Tr)));   % MSE curve
+hold on
+plot(Ts(1:end-time_steps+1),10*log10(E(Ts(1:end-time_steps+1))),'r');   % MSE curve
+grid minor
+
+title('Cost Function');
+xlabel('Iterations (samples)');
+ylabel('Mean Squared Error (MSE)');
+legend('Training Phase','Test Phase');
+
+figure(2)
+plot(Tr(2*M:end),Yr(Tr(2*M:end)));      % Actual values of mackey glass series
+hold on
+plot(Tr(2*M:end),Yp(Tr(2*M:end))','r')   % Predicted values during training
+plot(Ts,Ys(Ts),'--b');        % Actual unseen data
+plot(Ts(1:end-time_steps+1),Yp(Ts(1:end-time_steps+1))','--r');  % Predicted values of mackey glass series (testing)
+xlabel('Time: t');
+ylabel('Output: Y(t)');
+title('Mackey Glass Time Series Prediction Using Least Mean Square (LMS)')
+ylim([min(Ys)-0.5, max(Ys)+0.5])
+legend('Training Phase (desired)','Training Phase (predicted)','Test Phase (desired)','Test Phase (predicted)');
+
+mitr=10*log10(mean(E(Tr)));  % Minimum MSE of training
+mits=10*log10(mean(E(Ts(1:end-time_steps+1))));  % Minimum MSE of testing
+
+display(sprintf('Total training time is %.5f, \nTotal testing time is %.5f \nMSE value during training %.3f (dB),\nMSE value during testing %.3f (dB)', ...
+training_time,testing_time,mitr,mits));
+
+

@@ -1,0 +1,44 @@
+﻿function main
+fun = @obj
+%已经将目标函数表达成了子函数的
+% 约束条件，矩阵形式(cl <= nlcon(x) <= cu)
+nlcon = @cons   %约束条件已经表达成了子函数形式
+cl = [1;1;1;0;0;0;20;40];
+cu = [Inf;Inf;Inf;0.5;0.5;0.5;20;40];
+
+%变量的界(lb <= x <= ub)
+lb = zeros(12,1);
+ub = [20;20;40;40;20;20;40;40;20;20;40;40];         
+
+% 初始的猜测值
+x0 = [1 1 1 1 1 1 1 1 1 1 1 1]';
+
+% 设置求解器
+%opts = optiset('solver','ipopt','display','iter');  %如果按照这个设定那么输出结果将会错误，因为ipopt不??求解MINP问题，求解器
+%错误，不要设置就好，或逥?果对算法有丿Κ了解，??BONMIN求解。即opts = optiset('solver','BONMIN','display','iter');
+opts = optiset('display','iter');
+%求解器，如果不确定求解器就不要设定，否则会出问题，OPTI会自动选择合适的求解器
+xtype='CCIICCIICCII'   %I是整数，C是实数
+% 建立求解对象
+Opt = opti('fun',fun,'nl',nlcon,cl,cu,'bounds',lb,ub,'x0',x0,'xtype',xtype,'options',opts)
+
+% 求解
+[x,fval,exitflag,info] = solve(Opt)
+end
+% 目标函数的子函数
+function o=obj(x)
+o=-3*(x(3)/20)*log2(1+5*x(1)/x(3))-3*(x(4)/20)*log2(1+5*x(2)/x(4))-3*(x(7)/20)*log2(1+10*x(5)/x(7))-3*(x(8)/20)*log2(1+10*x(6)/x(8))
+3*(x(11)/20)*log2(1+15*x(9)/x(11))-3*(x(12)/20)*log2(1+15*x(10)/x(12))
+end
+
+%约束条件的子函数
+function con=cons(x)
+con(1)= x(3)*0.25*log2(1+(5*x(1))/(x(3)));
+con(2)= x(7)*0.25*log2(1+(10*x(5))/(x(7)));
+con(3)= x(11)*0.25*log2(1+(15*x(9))/(x(11)));
+con(4)=exp(-125*(x(4)*0.25*log2(1+(5*x(2))/(x(4))) - 1)*0.5); 
+con(5)=exp(-125*(x(8)*0.25*log2(1+(10*x(6))/(x(8))) - 1)*0.5);
+con(6)=exp(-125*(x(12)*0.25*log2(1+(15*x(10))/(x(12))) - 1)*0.5);
+con(7)=x(1)+x(2)+x(5)+x(6)+x(9)+x(10);
+con(8)=x(3)+x(4)+x(7)+x(8)+x(11)+x(12); 
+end

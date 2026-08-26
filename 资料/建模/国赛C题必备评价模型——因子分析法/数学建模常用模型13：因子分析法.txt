@@ -1,0 +1,82 @@
+clc,clear
+r=[1.000 0.577 0.509 0.387 0.462
+0.577 1.000 0.599 0.389 0.322
+0.509 0.599 1.000 0.436 0.426
+0.387 0.389 0.436 1.000 0.523
+0.462 0.322 0.426 0.523 1.000];
+%下面利用相关系数矩阵求主成分解，val的列为r的特征向量，即主成分的系数
+[vec,val,con]=pcacov(r);%val为r的特征值，con为各个主成分的贡献率
+f1=repmat(sign(sum(vec)),size(vec,1),1); %构造与vec同维数的元素为±1的矩阵
+vec=vec.*f1; %修改特征向量的正负号，每个特征向量乘以所有分量和的符号函数值
+f2=repmat(sqrt(val)',size(vec,1),1);
+a=vec.*f2 %构造全部因子的载荷矩阵
+a1=a(:,1) %提出一个因子的载荷矩阵
+tcha1=diag(r-a1*a1') %计算一个因子的特殊方差
+a2=a(:,[1,2]) %提出两个因子的载荷矩阵
+tcha2=diag(r-a2*a2') %计算两个因子的特殊方差
+ccha2=r-a2*a2'-diag(tcha2) %求两个因子时的残差矩阵
+gong=cumsum(con) %求累积贡献率
+
+
+
+clc,clear
+load data.txt; %把原始数据保存在纯文本文件data.txt中
+n=size(data,1);
+x=data(:,1:4); y=data(:,5); %分别提出自变量x和因变量y的值
+——————————————————————————————————
+如果不需要检验，则不需要把y列入原始数据中，把矩阵x的大小改变一下，以及下文中的m，m为原始数据中变量的个数。
+——————————————————————————————————
+m=4;%m为变量的个数
+x=zscore(x); %数据标准化
+r=cov(x); %求标准化数据的协方差阵，即求相关系数矩阵
+[vec,val,con]=pcacov(r); %进行主成分分析的相关计算
+c=cumsum(con);
+i=1;
+while ((c(i)<90)&(con(i+1)>10))
+    i=i+1;
+end
+num=i;
+f1=repmat(sign(sum(vec)),size(vec,1),1);
+vec=vec.*f1; %特征向量正负号转换
+f2=repmat(sqrt(val)',size(vec,1),1);
+a=vec.*f2; %求初等载荷矩阵
+am=a(:,1:num); %提出num个主因子的载荷矩阵
+[b,t]=rotatefactors(am,'method', 'varimax'); %旋转变换,b为旋转后的载荷阵
+bt=[b,a(:,num+1:end)]; %旋转后全部因子的载荷矩阵
+contr=sum(bt.^2); %计算因子贡献
+rate=contr(1:num)/sum(contr); %计算因子贡献率
+fprintf('综合因子得分公式：F=');
+for i=1:num
+    fprintf('+%f*F%d',rate(i),i);
+end
+fprintf('\n');
+coef=inv(r)*b; %计算得分函数的系数
+coef=coef';
+for i=1:num
+    fprintf('各个因子得分函数为F%d=',i);
+    for j=1:m
+        fprintf('+(%f)*x_%d',coef(i,j),j);
+    end
+    fprintf('\n');
+end
+%如果仅仅因子分析，程序到此为止
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+score=x*coef';%计算各个因子的得分
+weight=rate/sum(rate); %计算得分的权重
+Tscore=score*weight'; %对各因子的得分进行加权求和，即求各企业综合得分
+[STscore,ind]=sort(Tscore,'descend'); %对企业进行排序
+display=[score(ind,:)';STscore';ind']; %显示排序结果
+fprintf('排序结果如下：');
+for i=1:num
+    fprintf('第%d行为F%d得分,',i,i);
+end
+fprintf('第%d行为综合因子得分，第%d为原序列\n',num+1,num+2);
+disp(display);
+[ccoef,p]=corrcoef([Tscore,y]); %计算F与资产负债的相关系数
+[d,dt,e,et,stats]=regress(Tscore,[ones(n,1),y]);%计算F与资产负债的方程
+fprintf('因子分析法的回归方程为：F=%f+(%f*y)',d(1),d(2));
+if (stats(3)<0.05)%判断是否通过显著性检验的结果
+    fprintf('\n在显著性水平0.05的情况下，通过了假设检验。\n');
+else
+    fprintf('\n在显著性水平0.05的情况下，通不过假设检验。\n');
+end该MATLAB源代码的displsy为最终排序结果。
