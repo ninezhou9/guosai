@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "atom_weight_mean_and_extremes_preserved": true,
+  "manifest_output_hashes_match": true,
+  "final_workbook_rows": 48096,
+  "final_workbook_max_numeric_difference": 2.60770320892334e-08,
+  "main": {
+    "normal_cost": 12974103.908909125,
+    "emergency_cost": 974170.3939041658,
+    "total_cost": 13948274.302813292,
+    "planned_kWh": 21376897.33697604,
+    "emergency_kWh": 181484.56231389276,
+    "spill_kWh": 2309190.7043713694,
+    "charge_kWh": 6939829.719437479,
+    "discharge_kWh": 5629828.0194855835,
+    "emergency_days": 208,
+    "emergency_intervals": 2185,
+    "E_start": 10800.0,
+    "E_end": 1282.2813986383183,
+    "max_daily_cost": 120137.4183668339,
+    "top_5pct_daily_mean": 74621.75638190344
+  },
+  "prior_cost": 13942857.76548249,
+  "cost_change": 5416.537330800667,
+  "savings_vs_same_plan_greedy": 135005.96570201032,
+  "delayed_extra_cost": 1949.070774704218,
+  "delayed_extra_cost_percent": 0.013973562122382432,
+  "command": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "-X",
+    "utf8",
+    "代码\\实验\\q2_netload_corrected_20260911\\verify_delivery.py"
+  ]
+}

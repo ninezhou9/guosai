@@ -1,0 +1,50 @@
+{
+  "code_sha256": "91df6c1f7792e76438cb2e9ee9c0fb0c3610c5f6e1876d18c1a92744e4852ad2",
+  "inputs": {
+    "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72"
+  },
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "lightgbm": "4.7.0",
+  "runtime": "C:\\Program Files\\Python313\\python.exe",
+  "python": "3.13.15",
+  "seed": 20260911,
+  "openpyxl": "3.1.5",
+  "command": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "代码\\实验\\q2_netload_probabilistic_20260911\\run_experiment.py",
+    "--stage",
+    "all"
+  ],
+  "seconds": 350.7501928806305,
+  "status": "completed, pending user review",
+  "original_preservation": {
+    "checked_files": 3174,
+    "changed_or_missing": [],
+    "excluded": "git, skill metadata, old .deps, pycache, experiment folders"
+  },
+  "outputs": {
+    "results\\cache_signature.json": "9d9bdaf06c7b1d6e0574e657cad9170a3d59d19315ce827d6e438d019f13d5dc",
+    "results\\controller_selection.json": "9ab5fe315608d4f18ebaff5f265237913a38042a5b313c110931dadc65318c08",
+    "results\\daily_metrics.csv": "301884cb74033778b5fc8fe8270cb4cd2f7ffdad38ef038479b621177f09fd91",
+    "results\\data_audit.json": "8df668b15fbebe4e4a5acc0bd1712f6bf7a07bade154c58820e10014d4bb8a39",
+    "results\\forecast_quantiles.csv": "a08023a48c116fe8904a4dfb4accc16d301ea430e82a86585e4e6710e3601c60",
+    "results\\forecast_selection.json": "b6505271b32fd26ff5118403365e8e877d605b184846f33e2c2645ee3d4eff10",
+    "results\\forecasts.npz": "2a4b123a2096a7d87e2e41879f6a229fd4eb3681fbc8259e0046a47c3471ba11",
+    "results\\greedy_same_plan.npy": "c00cf6f959e2b2ee8951530c1c594a132be376a5a05b30d760d9960e74b7d26a",
+    "results\\greedy_same_plan_full_strategy.csv": "7b9fbb87252163375654f3574cc51027f23dfb52b5cfa67ae4313c4fc5c0fd19",
+    "results\\january_warmup.npy": "0ae4f0946ad8ddac2af1b80913b2d3a3b458e4382a3fb7598d5aa466703df01f",
+    "results\\main.npy": "6ac25c71f9c3296c62375438662b1f47534bbec1fb96aea30bf3d5c52da3d413",
+    "results\\main_full_strategy.csv": "19e3ff035a907fcd9d51678935111e2fcdc35a35e366bd9982ab020dfa1a7a82",
+    "results\\median_only.npy": "3f066fbdce5f336cab57776751a9c25b8eb88d2e14bff7ce458d4491971bf22b",
+    "results\\median_only_full_strategy.csv": "f28fd15058f0d7d8010aca59bd4d2b46b25f10a091ed6b4d68cb39c2ee100d29",
+    "results\\original_file_preservation.json": "229ff0c4a2dbbd515c0a1f2c0866325809ad1838f2ab71ae3583eb0e493c476d",
+    "results\\result2_独立实验审核版.xlsx": "113f2a3f543563422091446b500a92d11f074c7f5809e99b6868634826e3c45d",
+    "results\\smoke.json": "7338641d41769774d49d6c814e1b9956ddb3c7e9df8dbc45b2a5e72ac085a234",
+    "results\\summary.json": "5b5954c2b636fffa17efc1ff522017de0f56f80717af524567ec17f664735b32",
+    "results\\validation.json": "cac29f48743cb0ac4fe6ef803e5b3a60f98236388febdb32fbdffb1f1b7b8d6a",
+    "results\\validation_0.689577500.npy": "229879c350b49216a95c7bbe8702e80dc9644257033984ad733062bab7bf27b1",
+    "results\\validation_0.851330247.npy": "229879c350b49216a95c7bbe8702e80dc9644257033984ad733062bab7bf27b1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "algorithms": {
+    "grid_operator_cases": 48,
+    "max_error": 3.183231456205249e-12,
+    "expectation_before_action_check": true
+  },
+  "cost": 66383.8464545454,
+  "chosen": "q90",
+  "physical": {
+    "balance": 6.821210263296962e-13,
+    "state": 9.094947017729282e-13,
+    "continuity": 0.0,
+    "simultaneous": 0.0,
+    "soc": 0.0,
+    "power": 0.0,
+    "nonnegative": 0.0,
+    "emergency_charging": 0.0
+  },
+  "seconds": 0.6905601024627686
+}

@@ -1,0 +1,28 @@
+{
+  "status": "completed_pending_user_review",
+  "smoke_exit_code": 0,
+  "full_run_command": "Python313/python.exe -X utf8 run_revision.py --stage all",
+  "full_run_exit_code": 0,
+  "delivery_check_command": "Python313/python.exe -X utf8 verify_delivery.py",
+  "delivery_check_exit_code": 0,
+  "visual_review": {
+    "file": "figures/修正版累计费用.png",
+    "status": "passed",
+    "checks": [
+      "Chinese text",
+      "labels and units",
+      "legend",
+      "no clipping"
+    ]
+  },
+  "unresolved_execution_errors": [],
+  "remaining_model_approximations": [
+    "finite plan candidates",
+    "first-order three-state transition",
+    "up to seven weighted samples per state",
+    "60kWh value grid",
+    "explicit instant/local sensing assumptions"
+  ],
+  "protected_files": 4232,
+  "changed_protected_files": 0
+}

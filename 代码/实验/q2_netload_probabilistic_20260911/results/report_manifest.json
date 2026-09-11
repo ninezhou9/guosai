@@ -1,0 +1,13 @@
+{
+  "report_script_sha256": "755998b866386ee71e98c83cea4ba77ee88f6e1daf6242650ee4d089c68fbc4a",
+  "inputs": {
+    "summary.json": "5b5954c2b636fffa17efc1ff522017de0f56f80717af524567ec17f664735b32",
+    "validation.json": "cac29f48743cb0ac4fe6ef803e5b3a60f98236388febdb32fbdffb1f1b7b8d6a",
+    "controller_selection.json": "9ab5fe315608d4f18ebaff5f265237913a38042a5b313c110931dadc65318c08",
+    "forecast_selection.json": "b6505271b32fd26ff5118403365e8e877d605b184846f33e2c2645ee3d4eff10"
+  },
+  "report_sha256": "78aff5833a90a24d5bfb7329bf815cf9483522337860fecb48f3c458b2777e33",
+  "comparison_sha256": "a446688ed59ed8345e571790968717bfe4982ab44c87b4ed91485385e5bac9c1",
+  "command": "Python313/python.exe -X utf8 make_report.py",
+  "status": "generated from actual output"
+}

@@ -1,0 +1,152 @@
+{
+  "algorithm": {
+    "grid_operator_cases": 48,
+    "max_error": 3.183231456205249e-12,
+    "expectation_before_action_check": true
+  },
+  "physical": {
+    "main": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "median_only": {
+      "balance": 8.526512829121202e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "greedy_same_plan": {
+      "balance": 2.2737367544323206e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 0.0,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "delayed_same_plan": {
+      "balance": 2.2737367544323206e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 0.0,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    }
+  },
+  "causality": {
+    "first_72_steps_unchanged_after_future_actual_mutation": true,
+    "dayahead_features_probabilities_and_plan_unchanged_after_current_and_future_days_mutation": true,
+    "scope": "regression tests plus functions use only past days/current observation; not a universal statistical guarantee"
+  },
+  "grid_refinement": [
+    {
+      "date": "2025-03-20",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 43981.15288716082,
+      "cost_grid30": 43974.902387160815,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 30.0
+    },
+    {
+      "date": "2025-06-21",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 20670.60772280696,
+      "cost_grid30": 20670.60772280696,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 0.0
+    },
+    {
+      "date": "2025-09-23",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 45311.47212143473,
+      "cost_grid30": 45353.2025820185,
+      "E_end_grid60": 10798.14343953844,
+      "E_end_grid30": 10798.14343953844,
+      "max_step_E_difference": 30.0
+    },
+    {
+      "date": "2025-12-21",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 61926.35641820037,
+      "cost_grid30": 61924.79340736703,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 7.501851851851825
+    }
+  ],
+  "within_class_risk_counterexample": {
+    "expected_cost": 125.0,
+    "actual_Bellman_cost": 125.0,
+    "single_mean_cost": 0.0
+  },
+  "delayed_information": {
+    "commands_through_current_step_unchanged_when_current_and_future_actuals_change": true,
+    "previous_settled_actions_unchanged": true,
+    "local_protection": "actual power clips charging/discharging commands; not a no-sensor model"
+  },
+  "atom_compression_sensitivity": [
+    {
+      "date": "2025-03-20",
+      "fixed_plan_and_initial_state": true,
+      "cost_7_atoms": 43981.15288716082,
+      "cost_15_atoms": 43981.15288716082,
+      "E_end_7": 10800.0,
+      "E_end_15": 10800.0
+    },
+    {
+      "date": "2025-06-21",
+      "fixed_plan_and_initial_state": true,
+      "cost_7_atoms": 20670.60772280696,
+      "cost_15_atoms": 20670.60772280696,
+      "E_end_7": 10800.0,
+      "E_end_15": 10800.0
+    },
+    {
+      "date": "2025-09-23",
+      "fixed_plan_and_initial_state": true,
+      "cost_7_atoms": 45311.47212143473,
+      "cost_15_atoms": 45311.47212143473,
+      "E_end_7": 10798.14343953844,
+      "E_end_15": 10798.14343953844
+    },
+    {
+      "date": "2025-12-21",
+      "fixed_plan_and_initial_state": true,
+      "cost_7_atoms": 61926.35641820037,
+      "cost_15_atoms": 61926.35641820037,
+      "E_end_7": 10800.0,
+      "E_end_15": 10800.0
+    }
+  ],
+  "year_boundary": {
+    "Dec31_terminal_kappa": 0.0,
+    "common_initial_E": 10800.0,
+    "main_E_end": 1282.2813986383183,
+    "billing_excludes_terminal_value": true
+  },
+  "parameter_identifiability": {
+    "distinct_validation_trajectories": 2,
+    "limited_January_validation_not_statistical_proof": true
+  },
+  "xlsx_readback": {
+    "rows": 48096,
+    "normal_cost": 12974103.908909151,
+    "emergency_cost": 974170.3939041583,
+    "emergency_kWh": 181484.56231389032
+  }
+}

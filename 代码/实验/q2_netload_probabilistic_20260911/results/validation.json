@@ -1,0 +1,88 @@
+{
+  "algorithm": {
+    "grid_operator_cases": 48,
+    "max_error": 3.183231456205249e-12,
+    "expectation_before_action_check": true
+  },
+  "physical": {
+    "main": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "median_only": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "greedy_same_plan": {
+      "balance": 2.2737367544323206e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 0.0,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    }
+  },
+  "causality": {
+    "first_72_steps_unchanged_after_future_actual_mutation": true,
+    "dayahead_features_probabilities_and_plan_unchanged_after_current_and_future_days_mutation": true,
+    "scope": "regression tests plus functions use only past days/current observation; not a universal statistical guarantee"
+  },
+  "grid_refinement": [
+    {
+      "date": "2025-03-20",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 43981.15288716082,
+      "cost_grid30": 43974.902387160815,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 30.0
+    },
+    {
+      "date": "2025-06-21",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 20670.60772280696,
+      "cost_grid30": 20670.60772280696,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 0.0
+    },
+    {
+      "date": "2025-09-23",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 45321.57012143473,
+      "cost_grid30": 45319.9655820185,
+      "E_end_grid60": 10798.14343953844,
+      "E_end_grid30": 10798.14343953844,
+      "max_step_E_difference": 30.0
+    },
+    {
+      "date": "2025-12-21",
+      "same_g_and_initial_E": true,
+      "cost_grid60": 61933.44690736703,
+      "cost_grid30": 61924.79340736703,
+      "E_end_grid60": 10800.0,
+      "E_end_grid30": 10800.0,
+      "max_step_E_difference": 60.0
+    }
+  ],
+  "xlsx_readback": {
+    "rows": 48096,
+    "normal_cost": 12889351.310907928,
+    "emergency_cost": 1053506.454574588,
+    "emergency_kWh": 197755.25938936236
+  }
+}

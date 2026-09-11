@@ -1,0 +1,28 @@
+{
+  "status": "completed_pending_user_review",
+  "main_command": "Python313/python.exe -X utf8 run_experiment.py --stage all",
+  "main_exit_code": 0,
+  "smoke_exit_code": 0,
+  "report_command": "Python313/python.exe -X utf8 make_report.py",
+  "report_exit_code": 0,
+  "visual_review": {
+    "status": "passed",
+    "files": [
+      "figures/累计费用对照.png",
+      "figures/3月20日概率预测.png"
+    ],
+    "checked": [
+      "Chinese glyphs",
+      "axes and units",
+      "legend readability",
+      "no clipping"
+    ]
+  },
+  "resolved_issues": [
+    "Existing LightGBM verified after redundant project pip attempt failed",
+    "Windows default GBK cache decoding resolved by UTF-8 process mode",
+    "Report hash helper string path converted to pathlib.Path; report rerun exit 0"
+  ],
+  "unresolved_blockers": [],
+  "limitations": "Approximate 3-state error model, finite purchase candidates and SOC value grid; details in model contract and report"
+}

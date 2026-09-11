@@ -1,0 +1,116 @@
+{
+  "candidates": [
+    {
+      "kappa": 0.0,
+      "cost": 501848.8225493841,
+      "inventory_adjusted_validation_score": 505292.51651262667,
+      "E_start": 6542.32453944445,
+      "E_end": 1548.4058526505785,
+      "emergency_kWh": 3599.593509818681
+    },
+    {
+      "kappa": 0.17239437500000002,
+      "cost": 501848.8225493841,
+      "inventory_adjusted_validation_score": 505292.51651262667,
+      "E_start": 6542.32453944445,
+      "E_end": 1548.4058526505785,
+      "emergency_kWh": 3599.593509818681
+    },
+    {
+      "kappa": 0.34478875000000003,
+      "cost": 501848.8225493841,
+      "inventory_adjusted_validation_score": 505292.51651262667,
+      "E_start": 6542.32453944445,
+      "E_end": 1548.4058526505785,
+      "emergency_kWh": 3599.593509818681
+    },
+    {
+      "kappa": 0.5171831250000001,
+      "cost": 508078.2397684938,
+      "inventory_adjusted_validation_score": 505142.24256859254,
+      "E_start": 6542.32453944445,
+      "E_end": 10800.0,
+      "emergency_kWh": 3693.338513093092
+    },
+    {
+      "kappa": 0.6895775000000001,
+      "cost": 508078.2397684938,
+      "inventory_adjusted_validation_score": 505142.24256859254,
+      "E_start": 6542.32453944445,
+      "E_end": 10800.0,
+      "emergency_kWh": 3693.338513093092
+    },
+    {
+      "kappa": 0.861971875,
+      "cost": 508078.2397684938,
+      "inventory_adjusted_validation_score": 505142.24256859254,
+      "E_start": 6542.32453944445,
+      "E_end": 10800.0,
+      "emergency_kWh": 3693.338513093092
+    }
+  ],
+  "selected": {
+    "kappa": 0.5171831250000001,
+    "cost": 508078.2397684938,
+    "inventory_adjusted_validation_score": 505142.24256859254,
+    "E_start": 6542.32453944445,
+    "E_end": 10800.0,
+    "emergency_kWh": 3693.338513093092
+  },
+  "inventory_price_common": 0.6895775000000001,
+  "frozen_at": "Feb1 00:00",
+  "validation": "Jan22-31, terminal inventory adjusted with same exogenous reference price",
+  "max_trajectory_differences": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888
+    ],
+    [
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      9439.302994829888,
+      9439.302994829888,
+      9439.302994829888,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "distinct_trajectories": 2,
+  "actual_E_feb1": 10800.0,
+  "actual_state_source": "same causal Jan1-31 warmup, not chosen retrospective validation path"
+}

@@ -1,0 +1,201 @@
+{
+  "period": "2025-02-01..2025-12-31",
+  "days": 334,
+  "intervals": 48096,
+  "kappa": 0.5171831250000001,
+  "new": {
+    "main": {
+      "normal_cost": 12974103.908909125,
+      "emergency_cost": 974170.3939041658,
+      "total_cost": 13948274.302813292,
+      "planned_kWh": 21376897.33697604,
+      "emergency_kWh": 181484.56231389276,
+      "spill_kWh": 2309190.7043713694,
+      "charge_kWh": 6939829.719437479,
+      "discharge_kWh": 5629828.0194855835,
+      "emergency_days": 208,
+      "emergency_intervals": 2185,
+      "E_start": 10800.0,
+      "E_end": 1282.2813986383183,
+      "max_daily_cost": 120137.4183668339,
+      "top_5pct_daily_mean": 74621.75638190344
+    },
+    "median_only": {
+      "normal_cost": 12264029.706666008,
+      "emergency_cost": 2382902.2748084837,
+      "total_cost": 14646931.98147449,
+      "planned_kWh": 20313303.32192917,
+      "emergency_kWh": 474349.42630378576,
+      "spill_kWh": 1523733.025338116,
+      "charge_kWh": 7017687.096562108,
+      "discharge_kWh": 5692956.868633933,
+      "emergency_days": 322,
+      "emergency_intervals": 7014,
+      "E_start": 10800.0,
+      "E_end": 1210.7550904166628,
+      "max_daily_cost": 127162.4128272663,
+      "top_5pct_daily_mean": 83414.41333536961
+    },
+    "greedy_same_plan": {
+      "normal_cost": 12974103.908909125,
+      "emergency_cost": 1109176.3596061752,
+      "total_cost": 14083280.268515302,
+      "planned_kWh": 21376897.33697604,
+      "emergency_kWh": 180003.2095714821,
+      "spill_kWh": 2307361.873825186,
+      "charge_kWh": 6941658.549983663,
+      "discharge_kWh": 5631309.372227992,
+      "emergency_days": 203,
+      "emergency_intervals": 1226,
+      "E_start": 10800.0,
+      "E_end": 1282.2813986383183,
+      "max_daily_cost": 123711.05745635749,
+      "top_5pct_daily_mean": 78715.6926464901
+    },
+    "delayed_same_plan": {
+      "normal_cost": 12974103.908909125,
+      "emergency_cost": 976119.4646788705,
+      "total_cost": 13950223.373587996,
+      "planned_kWh": 21376897.33697604,
+      "emergency_kWh": 181452.19082576456,
+      "spill_kWh": 2309150.7395712137,
+      "charge_kWh": 6939869.684237635,
+      "discharge_kWh": 5629860.3909737095,
+      "emergency_days": 207,
+      "emergency_intervals": 2162,
+      "E_start": 10800.0,
+      "E_end": 1282.2813986383183,
+      "max_daily_cost": 120137.41836683388,
+      "top_5pct_daily_mean": 74648.09115556393
+    }
+  },
+  "forecast": {
+    "net_MAE_kW": 247.86429957372232,
+    "net_RMSE_kW": 371.0373105947737,
+    "quantiles": [
+      {
+        "quantile": 0.2,
+        "observed_fraction_below": 0.2006403858948769,
+        "pinball_kW": 103.03547794065844
+      },
+      {
+        "quantile": 0.5,
+        "observed_fraction_below": 0.5011643379906853,
+        "pinball_kW": 123.93214978686116
+      },
+      {
+        "quantile": 0.65,
+        "observed_fraction_below": 0.6493471390552229,
+        "pinball_kW": 119.92626966126006
+      },
+      {
+        "quantile": 0.8,
+        "observed_fraction_below": 0.7978418163672655,
+        "pinball_kW": 97.40257913969343
+      },
+      {
+        "quantile": 0.9,
+        "observed_fraction_below": 0.8984530938123753,
+        "pinball_kW": 77.2588395982275
+      }
+    ]
+  },
+  "old_summary_readonly": {
+    "risk": {
+      "normal_cost_yuan": 20192206.895422857,
+      "emergency_cost_yuan": 4328671.914977847,
+      "total_cost_yuan": 24520878.810400702,
+      "purchase_kWh": 28633004.072597295,
+      "emergency_kWh": 947254.8665142062,
+      "surplus_spill_kWh": 10365544.158257704,
+      "start_soc_kWh": 10691.657650070038,
+      "end_soc_kWh": 10360.254526278743,
+      "emergency_intervals": 5340,
+      "charge_kWh": 6714860.78262392,
+      "discharge_kWh": 5439335.496736787,
+      "actual_daily_CVaR95_yuan": 134300.84430097466,
+      "max_daily_cost_yuan": 143183.46501869423,
+      "annual_energy_balance_residual_kWh": 5.475158104673028e-10
+    },
+    "neutral": {
+      "normal_cost_yuan": 14145329.271548491,
+      "emergency_cost_yuan": 5948624.102087578,
+      "total_cost_yuan": 20093953.373636067,
+      "purchase_kWh": 21391426.156689383,
+      "emergency_kWh": 1423301.989408627,
+      "surplus_spill_kWh": 3713133.4324162556,
+      "start_soc_kWh": 10691.657650070036,
+      "end_soc_kWh": 8416.082932453248,
+      "emergency_intervals": 5864,
+      "charge_kWh": 6128701.241899688,
+      "discharge_kWh": 4966296.023184603,
+      "actual_daily_CVaR95_yuan": 159009.54991605814,
+      "max_daily_cost_yuan": 174138.77506250734,
+      "annual_energy_balance_residual_kWh": 5.364199751056731e-09
+    },
+    "forecast_errors": [
+      {
+        "series": "load",
+        "MAE_kW": 573.5745036536827,
+        "RMSE_kW": 1017.6298598513608,
+        "previous_day_baseline_MAE_kW": 650.02006751497,
+        "previous_day_baseline_RMSE_kW": 1128.3912380310528
+      },
+      {
+        "series": "pv",
+        "MAE_kW": 185.34649152736193,
+        "RMSE_kW": 375.1748781365903,
+        "previous_day_baseline_MAE_kW": 185.34649152736193,
+        "previous_day_baseline_RMSE_kW": 375.1748781365903
+      }
+    ],
+    "validation": {
+      "max_physical_residual_kWh": 1.0231815394945443e-12,
+      "date_count": 334,
+      "interval_count_per_policy": 48096,
+      "physical_tolerance_kWh": 2e-05,
+      "cross_day_continuity": "passed"
+    },
+    "risk_vs_neutral": {
+      "total_cost_yuan": 22.031132223950056,
+      "emergency_kWh": -33.446670238423216,
+      "emergency_cost_yuan": -27.23238448603995,
+      "actual_daily_CVaR95_yuan": -15.539133107494063
+    },
+    "parameters": {
+      "risk": {
+        "index": 1,
+        "kappa": 0.6895775000000001,
+        "alpha": 0.8,
+        "lambda": 0.25,
+        "normal_yuan": 777303.6367011052,
+        "emergency_yuan": 132954.3400198827,
+        "total_yuan": 910257.9767209878,
+        "end_soc_kWh": 10691.657650070038,
+        "emergency_kWh": 29008.221262721192
+      },
+      "neutral": {
+        "index": 0,
+        "kappa": 0.6895775000000001,
+        "alpha": 0.9,
+        "lambda": 0,
+        "normal_yuan": 550066.5221292659,
+        "emergency_yuan": 180807.00411053092,
+        "total_yuan": 730873.5262397969,
+        "end_soc_kWh": 10691.657650070036,
+        "emergency_kWh": 45460.589551001045
+      }
+    }
+  },
+  "limitations": [
+    "finite purchase candidate set",
+    "3-state first-order Markov transition",
+    "up to 7 weighted atoms per state, preserves sample extremes but compresses interior",
+    "60 kWh value grid with continuous actual storage",
+    "main: instant piecewise-constant observation",
+    "delayed: one-step strategic observation delay with local sensor-based protection",
+    "fixed annual endpoint, Dec31 terminal value zero",
+    "same dataset used in earlier design, not new blind evaluation"
+  ],
+  "terminal_kappa_Dec31": 0.0
+}

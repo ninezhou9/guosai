@@ -1,0 +1,32 @@
+{
+  "date": "2025-07-11",
+  "terminal_kappa": 0.5171831250000001,
+  "chosen_candidate": "q65",
+  "candidates": [
+    {
+      "candidate": "q50",
+      "expected_planning_loss": 27369.27474990033,
+      "normal_cost": 26364.157284223635
+    },
+    {
+      "candidate": "q65",
+      "expected_planning_loss": 25337.232613065407,
+      "normal_cost": 27560.659152067117
+    },
+    {
+      "candidate": "q80",
+      "expected_planning_loss": 25397.393539453285,
+      "normal_cost": 30626.715719907195
+    },
+    {
+      "candidate": "q90",
+      "expected_planning_loss": 30789.99837238615,
+      "normal_cost": 36224.749131442324
+    },
+    {
+      "candidate": "markov_mean",
+      "expected_planning_loss": 26421.51535287099,
+      "normal_cost": 26847.180191760468
+    }
+  ]
+}

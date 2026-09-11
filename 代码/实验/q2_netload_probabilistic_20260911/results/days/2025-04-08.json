@@ -1,0 +1,31 @@
+{
+  "date": "2025-04-08",
+  "chosen_candidate": "q80",
+  "candidates": [
+    {
+      "candidate": "q50",
+      "expected_planning_loss": 33466.38560095041,
+      "normal_cost": 36028.46151106295
+    },
+    {
+      "candidate": "q65",
+      "expected_planning_loss": 31610.51355322119,
+      "normal_cost": 37135.74534168924
+    },
+    {
+      "candidate": "q80",
+      "expected_planning_loss": 31567.04547840354,
+      "normal_cost": 38400.669353201076
+    },
+    {
+      "candidate": "q90",
+      "expected_planning_loss": 33782.91285455614,
+      "normal_cost": 41172.11406288568
+    },
+    {
+      "candidate": "markov_mean",
+      "expected_planning_loss": 33594.42029436666,
+      "normal_cost": 35934.09436684822
+    }
+  ]
+}
