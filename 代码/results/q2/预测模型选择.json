@@ -1,0 +1,95 @@
+{
+  "candidates": [
+    {
+      "series": "load",
+      "p": 0,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 642.385494642857,
+      "RMSE_kW": 1126.413407222334,
+      "mean_AIC_scaled_series": 7214.0062651763465
+    },
+    {
+      "series": "load",
+      "p": 1,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 561.7295131083557,
+      "RMSE_kW": 1008.2313507664797,
+      "mean_AIC_scaled_series": -465.23973925694924
+    },
+    {
+      "series": "load",
+      "p": 2,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 585.9291951244968,
+      "RMSE_kW": 1047.982596982985,
+      "mean_AIC_scaled_series": -574.2171336659898
+    },
+    {
+      "series": "pv",
+      "p": 0,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 101.67596001984127,
+      "RMSE_kW": 215.68218272444548,
+      "mean_AIC_scaled_series": -884.9984347849635
+    },
+    {
+      "series": "pv",
+      "p": 1,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 101.67596001984127,
+      "RMSE_kW": 215.68218272444548,
+      "mean_AIC_scaled_series": -5245.084565303913
+    },
+    {
+      "series": "pv",
+      "p": 2,
+      "seasonal_order": [
+        0,
+        1,
+        0,
+        144
+      ],
+      "validation": "2025-01-15..2025-01-21",
+      "MAE_kW": 101.67596001984127,
+      "RMSE_kW": 215.68218272444548,
+      "mean_AIC_scaled_series": -5789.8133750045145
+    }
+  ],
+  "selected_p": [
+    1,
+    2
+  ],
+  "training_window_days": 28,
+  "orders_frozen_at": "2025-01-22 00:00",
+  "no_future_data": "each fit uses rows strictly before prediction day; hyperparameters frozen before Feb"
+}

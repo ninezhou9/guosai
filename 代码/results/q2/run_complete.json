@@ -1,0 +1,15 @@
+{
+  "status": "backtest and export finished",
+  "counts": {
+    "risk": [
+      334,
+      144,
+      7
+    ],
+    "neutral": [
+      334,
+      144,
+      7
+    ]
+  }
+}

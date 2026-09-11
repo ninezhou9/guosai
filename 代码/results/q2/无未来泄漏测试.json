@@ -1,0 +1,8 @@
+{
+  "method": "change actuals after noon and all later days; earlier controls and all day-ahead purchases must be unchanged",
+  "day": "2025-02-01",
+  "max_dispatch_difference": 0.0,
+  "max_plan_difference": 0.0,
+  "max_forecast_difference": 0.0,
+  "status": "passed"
+}

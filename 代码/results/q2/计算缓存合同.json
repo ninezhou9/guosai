@@ -1,0 +1,5 @@
+{
+  "signature": "7c4404026015e30ceea2f6a426b4d48f16a3fb4eef8a7cb67542b6a017d4b303",
+  "scope": "solver functions, selection grid, forecast cache, inputs and scipy version",
+  "cache_policy": "fail on change; use a new output directory for changed models"
+}

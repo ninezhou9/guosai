@@ -1,0 +1,31 @@
+{
+  "sheets": {
+    "小区负载": {
+      "shape": [
+        365,
+        144
+      ],
+      "missing": 0,
+      "min": 1995.7176,
+      "max": 7978.8849
+    },
+    "光伏发电实际功率": {
+      "shape": [
+        365,
+        144
+      ],
+      "missing": 0,
+      "min": 0.0,
+      "max": 10216.2
+    }
+  },
+  "date_range": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "time_alignment": "00:10 denotes 00:00-00:10; 24:00 denotes 23:50-24:00",
+  "inputs": {
+    "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72"
+  }
+}

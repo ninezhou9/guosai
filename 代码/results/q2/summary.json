@@ -1,0 +1,87 @@
+{
+  "risk": {
+    "normal_cost_yuan": 20192206.895422857,
+    "emergency_cost_yuan": 4328671.914977847,
+    "total_cost_yuan": 24520878.810400702,
+    "purchase_kWh": 28633004.072597295,
+    "emergency_kWh": 947254.8665142062,
+    "surplus_spill_kWh": 10365544.158257704,
+    "start_soc_kWh": 10691.657650070038,
+    "end_soc_kWh": 10360.254526278743,
+    "emergency_intervals": 5340,
+    "charge_kWh": 6714860.78262392,
+    "discharge_kWh": 5439335.496736787,
+    "actual_daily_CVaR95_yuan": 134300.84430097466,
+    "max_daily_cost_yuan": 143183.46501869423,
+    "annual_energy_balance_residual_kWh": 5.475158104673028e-10
+  },
+  "neutral": {
+    "normal_cost_yuan": 14145329.271548491,
+    "emergency_cost_yuan": 5948624.102087578,
+    "total_cost_yuan": 20093953.373636067,
+    "purchase_kWh": 21391426.156689383,
+    "emergency_kWh": 1423301.989408627,
+    "surplus_spill_kWh": 3713133.4324162556,
+    "start_soc_kWh": 10691.657650070036,
+    "end_soc_kWh": 8416.082932453248,
+    "emergency_intervals": 5864,
+    "charge_kWh": 6128701.241899688,
+    "discharge_kWh": 4966296.023184603,
+    "actual_daily_CVaR95_yuan": 159009.54991605814,
+    "max_daily_cost_yuan": 174138.77506250734,
+    "annual_energy_balance_residual_kWh": 5.364199751056731e-09
+  },
+  "forecast_errors": [
+    {
+      "series": "load",
+      "MAE_kW": 573.5745036536827,
+      "RMSE_kW": 1017.6298598513608,
+      "previous_day_baseline_MAE_kW": 650.02006751497,
+      "previous_day_baseline_RMSE_kW": 1128.3912380310528
+    },
+    {
+      "series": "pv",
+      "MAE_kW": 185.34649152736193,
+      "RMSE_kW": 375.1748781365903,
+      "previous_day_baseline_MAE_kW": 185.34649152736193,
+      "previous_day_baseline_RMSE_kW": 375.1748781365903
+    }
+  ],
+  "validation": {
+    "max_physical_residual_kWh": 1.0231815394945443e-12,
+    "date_count": 334,
+    "interval_count_per_policy": 48096,
+    "physical_tolerance_kWh": 2e-05,
+    "cross_day_continuity": "passed"
+  },
+  "risk_vs_neutral": {
+    "total_cost_yuan": 22.031132223950056,
+    "emergency_kWh": -33.446670238423216,
+    "emergency_cost_yuan": -27.23238448603995,
+    "actual_daily_CVaR95_yuan": -15.539133107494063
+  },
+  "parameters": {
+    "risk": {
+      "index": 1,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.8,
+      "lambda": 0.25,
+      "normal_yuan": 777303.6367011052,
+      "emergency_yuan": 132954.3400198827,
+      "total_yuan": 910257.9767209878,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 29008.221262721192
+    },
+    "neutral": {
+      "index": 0,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.9,
+      "lambda": 0,
+      "normal_yuan": 550066.5221292659,
+      "emergency_yuan": 180807.00411053092,
+      "total_yuan": 730873.5262397969,
+      "end_soc_kWh": 10691.657650070036,
+      "emergency_kWh": 45460.589551001045
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "template": "基础数据/result2.xlsx",
+  "records": [
+    {
+      "template_date": "2025-02-01T00:00:00",
+      "column_index": 2,
+      "original_label": "0:10-0:20",
+      "start": "2025-02-01T00:10:00",
+      "end": "2025-02-01T00:20:00"
+    },
+    {
+      "template_date": "2025-02-01T00:00:00",
+      "column_index": 144,
+      "original_label": "23:50-0:00+1",
+      "start": "2025-02-01T23:50:00",
+      "end": "2025-02-02T00:00:00"
+    },
+    {
+      "template_date": "2025-02-01T00:00:00",
+      "column_index": 145,
+      "original_label": "0:00-0:10+1",
+      "start": "2025-02-02T00:00:00",
+      "end": "2025-02-02T00:10:00"
+    },
+    {
+      "template_date": "2025-12-31T00:00:00",
+      "column_index": 2,
+      "original_label": "0:10-0:20",
+      "start": "2025-12-31T00:10:00",
+      "end": "2025-12-31T00:20:00"
+    },
+    {
+      "template_date": "2025-12-31T00:00:00",
+      "column_index": 144,
+      "original_label": "23:50-0:00+1",
+      "start": "2025-12-31T23:50:00",
+      "end": "2026-01-01T00:00:00"
+    },
+    {
+      "template_date": "2025-12-31T00:00:00",
+      "column_index": 145,
+      "original_label": "0:00-0:10+1",
+      "start": "2026-01-01T00:00:00",
+      "end": "2026-01-01T00:10:00"
+    }
+  ],
+  "last_label_note": "EO1 is literally 0:00-0:10+1; consecutive144-step order and result1 last label identify this as next-day midnight interval",
+  "missing_input": "2025-01-01 00:00..00:10",
+  "decision_boundary_issue": "previous template row last interval is not complete at current day00:00",
+  "status": "已取消：用户要求恢复结束时标；本文件仅为历史模板审计，未启动开始时标计算"
+}

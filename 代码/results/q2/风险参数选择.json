@@ -1,0 +1,120 @@
+{
+  "validation_dates": [
+    "2025-01-22",
+    "2025-01-31"
+  ],
+  "scores": [
+    {
+      "index": 0,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.9,
+      "lambda": 0,
+      "normal_yuan": 550066.5221292659,
+      "emergency_yuan": 180807.00411053092,
+      "total_yuan": 730873.5262397969,
+      "end_soc_kWh": 10691.657650070036,
+      "emergency_kWh": 45460.589551001045
+    },
+    {
+      "index": 1,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.8,
+      "lambda": 0.25,
+      "normal_yuan": 777303.6367011052,
+      "emergency_yuan": 132954.3400198827,
+      "total_yuan": 910257.9767209878,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 29008.221262721192
+    },
+    {
+      "index": 2,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.9,
+      "lambda": 0.25,
+      "normal_yuan": 782840.2703566942,
+      "emergency_yuan": 128145.79620126083,
+      "total_yuan": 910986.0665579551,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 27654.90366346879
+    },
+    {
+      "index": 3,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.9,
+      "lambda": 0.5,
+      "normal_yuan": 808448.6800508733,
+      "emergency_yuan": 127852.21987298083,
+      "total_yuan": 936300.8999238542,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 27485.821400622433
+    },
+    {
+      "index": 4,
+      "kappa": 0.8513302469135803,
+      "alpha": 0.9,
+      "lambda": 0,
+      "normal_yuan": 545530.0750588179,
+      "emergency_yuan": 187896.9128555165,
+      "total_yuan": 733426.9879143344,
+      "end_soc_kWh": 10691.657650070036,
+      "emergency_kWh": 47728.70399088393
+    },
+    {
+      "index": 5,
+      "kappa": 0.8513302469135803,
+      "alpha": 0.8,
+      "lambda": 0.25,
+      "normal_yuan": 778569.7873817906,
+      "emergency_yuan": 133363.36150509442,
+      "total_yuan": 911933.148886885,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 29088.920514801943
+    },
+    {
+      "index": 6,
+      "kappa": 0.8513302469135803,
+      "alpha": 0.9,
+      "lambda": 0.25,
+      "normal_yuan": 783409.725791994,
+      "emergency_yuan": 128895.54058078956,
+      "total_yuan": 912305.2663727836,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 27948.696371615955
+    },
+    {
+      "index": 7,
+      "kappa": 0.8513302469135803,
+      "alpha": 0.9,
+      "lambda": 0.5,
+      "normal_yuan": 831859.0909305706,
+      "emergency_yuan": 150585.2045276325,
+      "total_yuan": 982444.2954582032,
+      "end_soc_kWh": 10775.003947136172,
+      "emergency_kWh": 32316.8569805473
+    }
+  ],
+  "risk_selected": {
+    "index": 1,
+    "kappa": 0.6895775000000001,
+    "alpha": 0.8,
+    "lambda": 0.25,
+    "normal_yuan": 777303.6367011052,
+    "emergency_yuan": 132954.3400198827,
+    "total_yuan": 910257.9767209878,
+    "end_soc_kWh": 10691.657650070038,
+    "emergency_kWh": 29008.221262721192
+  },
+  "neutral_selected": {
+    "index": 0,
+    "kappa": 0.6895775000000001,
+    "alpha": 0.9,
+    "lambda": 0,
+    "normal_yuan": 550066.5221292659,
+    "emergency_yuan": 180807.00411053092,
+    "total_yuan": 730873.5262397969,
+    "end_soc_kWh": 10691.657650070036,
+    "emergency_kWh": 45460.589551001045
+  },
+  "selection_rule": "minimum January validation actual transaction cost, independent of Feb-Dec",
+  "terminal_value_not_counted_in_actual_cost": true
+}

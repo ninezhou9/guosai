@@ -1,0 +1,749 @@
+validation 0 2025-01-22
+validation 0 2025-01-23
+validation 0 2025-01-24
+validation 0 2025-01-25
+validation 0 2025-01-26
+validation 0 2025-01-27
+validation 0 2025-01-28
+validation 0 2025-01-29
+validation 0 2025-01-30
+validation 0 2025-01-31
+validation 1 2025-01-22
+validation 1 2025-01-23
+validation 1 2025-01-24
+validation 1 2025-01-25
+validation 1 2025-01-26
+validation 1 2025-01-27
+validation 1 2025-01-28
+validation 1 2025-01-29
+validation 1 2025-01-30
+validation 1 2025-01-31
+validation 2 2025-01-22
+validation 2 2025-01-23
+validation 2 2025-01-24
+validation 2 2025-01-25
+validation 2 2025-01-26
+validation 2 2025-01-27
+validation 2 2025-01-28
+validation 2 2025-01-29
+validation 2 2025-01-30
+validation 2 2025-01-31
+validation 3 2025-01-22
+validation 3 2025-01-23
+validation 3 2025-01-24
+validation 3 2025-01-25
+validation 3 2025-01-26
+validation 3 2025-01-27
+validation 3 2025-01-28
+validation 3 2025-01-29
+validation 3 2025-01-30
+validation 3 2025-01-31
+validation 4 2025-01-22
+validation 4 2025-01-23
+validation 4 2025-01-24
+validation 4 2025-01-25
+validation 4 2025-01-26
+validation 4 2025-01-27
+validation 4 2025-01-28
+validation 4 2025-01-29
+validation 4 2025-01-30
+validation 4 2025-01-31
+validation 5 2025-01-22
+validation 5 2025-01-23
+validation 5 2025-01-24
+validation 5 2025-01-25
+validation 5 2025-01-26
+validation 5 2025-01-27
+validation 5 2025-01-28
+validation 5 2025-01-29
+validation 5 2025-01-30
+validation 5 2025-01-31
+validation 6 2025-01-22
+validation 6 2025-01-23
+validation 6 2025-01-24
+validation 6 2025-01-25
+validation 6 2025-01-26
+validation 6 2025-01-27
+validation 6 2025-01-28
+validation 6 2025-01-29
+validation 6 2025-01-30
+validation 6 2025-01-31
+validation 7 2025-01-22
+validation 7 2025-01-23
+validation 7 2025-01-24
+validation 7 2025-01-25
+validation 7 2025-01-26
+validation 7 2025-01-27
+validation 7 2025-01-28
+validation 7 2025-01-29
+validation 7 2025-01-30
+validation 7 2025-01-31
+backtest risk 2025-02-01 cost 45823.68
+backtest risk 2025-02-02 cost 131594.78
+backtest risk 2025-02-03 cost 86586.97
+backtest risk 2025-02-04 cost 87542.01
+backtest risk 2025-02-05 cost 85162.29
+backtest risk 2025-02-06 cost 83169.25
+backtest risk 2025-02-07 cost 77521.13
+backtest risk 2025-02-08 cost 43047.56
+backtest risk 2025-02-09 cost 136853.62
+backtest risk 2025-02-10 cost 87223.12
+backtest risk 2025-02-11 cost 81436.03
+backtest risk 2025-02-12 cost 79883.79
+backtest risk 2025-02-13 cost 79124.21
+backtest risk 2025-02-14 cost 69878.63
+backtest risk 2025-02-15 cost 41312.39
+backtest risk 2025-02-16 cost 130073.36
+backtest risk 2025-02-17 cost 84110.84
+backtest risk 2025-02-18 cost 79286.09
+backtest risk 2025-02-19 cost 79202.1
+backtest risk 2025-02-20 cost 78400.75
+backtest risk 2025-02-21 cost 68958.15
+backtest risk 2025-02-22 cost 39200.81
+backtest risk 2025-02-23 cost 117287.34
+backtest risk 2025-02-24 cost 79207.27
+backtest risk 2025-02-25 cost 73862.76
+backtest risk 2025-02-26 cost 71280.58
+backtest risk 2025-02-27 cost 77249.92
+backtest risk 2025-02-28 cost 65345.27
+backtest risk 2025-03-01 cost 37610.49
+backtest risk 2025-03-02 cost 133321.63
+backtest risk 2025-03-03 cost 83898.73
+backtest risk 2025-03-04 cost 76427.6
+backtest risk 2025-03-05 cost 73261.7
+backtest risk 2025-03-06 cost 72107.12
+backtest risk 2025-03-07 cost 64920.26
+backtest risk 2025-03-08 cost 33920.63
+backtest risk 2025-03-09 cost 116266.71
+backtest risk 2025-03-10 cost 77230.87
+backtest risk 2025-03-11 cost 73426.8
+backtest risk 2025-03-12 cost 68103.12
+backtest risk 2025-03-13 cost 74607.89
+backtest risk 2025-03-14 cost 64904.15
+backtest risk 2025-03-15 cost 31886.55
+backtest risk 2025-03-16 cost 113289.07
+backtest risk 2025-03-17 cost 72442.32
+backtest risk 2025-03-18 cost 73191.66
+backtest risk 2025-03-19 cost 66223.83
+backtest risk 2025-03-20 cost 64427.61
+backtest risk 2025-03-21 cost 59519.57
+backtest risk 2025-03-22 cost 28393.17
+backtest risk 2025-03-23 cost 95008.48
+backtest risk 2025-03-24 cost 68832.31
+backtest risk 2025-03-25 cost 67005.87
+backtest risk 2025-03-26 cost 64077.67
+backtest risk 2025-03-27 cost 62808.21
+backtest risk 2025-03-28 cost 56812.0
+backtest risk 2025-03-29 cost 27671.55
+backtest risk 2025-03-30 cost 103282.16
+backtest risk 2025-03-31 cost 65148.43
+backtest risk 2025-04-01 cost 63786.26
+backtest risk 2025-04-02 cost 74430.11
+backtest risk 2025-04-03 cost 63854.95
+backtest risk 2025-04-04 cost 54815.96
+backtest risk 2025-04-05 cost 26311.4
+backtest risk 2025-04-06 cost 98107.71
+backtest risk 2025-04-07 cost 62667.11
+backtest risk 2025-04-08 cost 63353.01
+backtest risk 2025-04-09 cost 61130.78
+backtest risk 2025-04-10 cost 63457.14
+backtest risk 2025-04-11 cost 53418.84
+backtest risk 2025-04-12 cost 25675.14
+backtest risk 2025-04-13 cost 98565.45
+backtest risk 2025-04-14 cost 63351.21
+backtest risk 2025-04-15 cost 58417.56
+backtest risk 2025-04-16 cost 59991.99
+backtest risk 2025-04-17 cost 60293.97
+backtest risk 2025-04-18 cost 51199.02
+backtest risk 2025-04-19 cost 25439.16
+backtest risk 2025-04-20 cost 97911.34
+backtest risk 2025-04-21 cost 62418.37
+backtest risk 2025-04-22 cost 56538.75
+backtest risk 2025-04-23 cost 61183.21
+backtest risk 2025-04-24 cost 56680.96
+backtest risk 2025-04-25 cost 48735.04
+backtest risk 2025-04-26 cost 22547.9
+backtest risk 2025-04-27 cost 97043.86
+backtest risk 2025-04-28 cost 66726.84
+backtest risk 2025-04-29 cost 61302.88
+backtest risk 2025-04-30 cost 54979.86
+backtest risk 2025-05-01 cost 61727.59
+backtest risk 2025-05-02 cost 52768.09
+backtest risk 2025-05-03 cost 30828.87
+backtest risk 2025-05-04 cost 85909.72
+backtest risk 2025-05-05 cost 69419.62
+backtest risk 2025-05-06 cost 63098.85
+backtest risk 2025-05-07 cost 62077.75
+backtest risk 2025-05-08 cost 62153.46
+backtest risk 2025-05-09 cost 55327.79
+backtest risk 2025-05-10 cost 27512.52
+backtest risk 2025-05-11 cost 99709.91
+backtest risk 2025-05-12 cost 66123.81
+backtest risk 2025-05-13 cost 63262.29
+backtest risk 2025-05-14 cost 58909.03
+backtest risk 2025-05-15 cost 60711.66
+backtest risk 2025-05-16 cost 52573.59
+backtest risk 2025-05-17 cost 24968.54
+backtest risk 2025-05-18 cost 91244.67
+backtest risk 2025-05-19 cost 61436.09
+backtest risk 2025-05-20 cost 56756.24
+backtest risk 2025-05-21 cost 59548.08
+backtest risk 2025-05-22 cost 58536.38
+backtest risk 2025-05-23 cost 50307.89
+backtest risk 2025-05-24 cost 24276.81
+backtest risk 2025-05-25 cost 94906.8
+backtest risk 2025-05-26 cost 63767.59
+backtest risk 2025-05-27 cost 60284.35
+backtest risk 2025-05-28 cost 58307.7
+backtest risk 2025-05-29 cost 60205.08
+backtest risk 2025-05-30 cost 53064.55
+backtest risk 2025-05-31 cost 26635.91
+backtest risk 2025-06-01 cost 140205.7
+backtest risk 2025-06-02 cost 80880.63
+backtest risk 2025-06-03 cost 73205.33
+backtest risk 2025-06-04 cost 72710.93
+backtest risk 2025-06-05 cost 76129.01
+backtest risk 2025-06-06 cost 67898.53
+backtest risk 2025-06-07 cost 41334.64
+backtest risk 2025-06-08 cost 95491.06
+backtest risk 2025-06-09 cost 81487.38
+backtest risk 2025-06-10 cost 77756.23
+backtest risk 2025-06-11 cost 76554.83
+backtest risk 2025-06-12 cost 73022.61
+backtest risk 2025-06-13 cost 62858.96
+backtest risk 2025-06-14 cost 34887.32
+backtest risk 2025-06-15 cost 124189.67
+backtest risk 2025-06-16 cost 79817.19
+backtest risk 2025-06-17 cost 79811.29
+backtest risk 2025-06-18 cost 74118.66
+backtest risk 2025-06-19 cost 74605.52
+backtest risk 2025-06-20 cost 62703.98
+backtest risk 2025-06-21 cost 34226.93
+backtest risk 2025-06-22 cost 119820.42
+backtest risk 2025-06-23 cost 81921.95
+backtest risk 2025-06-24 cost 83009.37
+backtest risk 2025-06-25 cost 74582.43
+backtest risk 2025-06-26 cost 70605.91
+backtest risk 2025-06-27 cost 62692.59
+backtest risk 2025-06-28 cost 31944.98
+backtest risk 2025-06-29 cost 116480.3
+backtest risk 2025-06-30 cost 80793.14
+backtest risk 2025-07-01 cost 81076.36
+backtest risk 2025-07-02 cost 76174.32
+backtest risk 2025-07-03 cost 79348.82
+backtest risk 2025-07-04 cost 71745.25
+backtest risk 2025-07-05 cost 39039.27
+backtest risk 2025-07-06 cost 140293.18
+backtest risk 2025-07-07 cost 86807.96
+backtest risk 2025-07-08 cost 84433.26
+backtest risk 2025-07-09 cost 79924.54
+backtest risk 2025-07-10 cost 79037.13
+backtest risk 2025-07-11 cost 73196.93
+backtest risk 2025-07-12 cost 45950.34
+backtest risk 2025-07-13 cost 116149.53
+backtest risk 2025-07-14 cost 80386.13
+backtest risk 2025-07-15 cost 77560.07
+backtest risk 2025-07-16 cost 76094.03
+backtest risk 2025-07-17 cost 79995.87
+backtest risk 2025-07-18 cost 71007.36
+backtest risk 2025-07-19 cost 42722.55
+backtest risk 2025-07-20 cost 114581.81
+backtest risk 2025-07-21 cost 82024.67
+backtest risk 2025-07-22 cost 82422.27
+backtest risk 2025-07-23 cost 79010.74
+backtest risk 2025-07-24 cost 77014.69
+backtest risk 2025-07-25 cost 70372.68
+backtest risk 2025-07-26 cost 40403.5
+backtest risk 2025-07-27 cost 127908.71
+backtest risk 2025-07-28 cost 82994.31
+backtest risk 2025-07-29 cost 85080.99
+backtest risk 2025-07-30 cost 80675.17
+backtest risk 2025-07-31 cost 76581.86
+backtest risk 2025-08-01 cost 73602.43
+backtest risk 2025-08-02 cost 38402.26
+backtest risk 2025-08-03 cost 102599.35
+backtest risk 2025-08-04 cost 71485.75
+backtest risk 2025-08-05 cost 74198.14
+backtest risk 2025-08-06 cost 68748.64
+backtest risk 2025-08-07 cost 74074.63
+backtest risk 2025-08-08 cost 61618.03
+backtest risk 2025-08-09 cost 36136.02
+backtest risk 2025-08-10 cost 108568.85
+backtest risk 2025-08-11 cost 76445.27
+backtest risk 2025-08-12 cost 69425.13
+backtest risk 2025-08-13 cost 72062.65
+backtest risk 2025-08-14 cost 74064.61
+backtest risk 2025-08-15 cost 66355.46
+backtest risk 2025-08-16 cost 35823.35
+backtest risk 2025-08-17 cost 107810.88
+backtest risk 2025-08-18 cost 79259.91
+backtest risk 2025-08-19 cost 70166.76
+backtest risk 2025-08-20 cost 78741.78
+backtest risk 2025-08-21 cost 73426.41
+backtest risk 2025-08-22 cost 65312.96
+backtest risk 2025-08-23 cost 37802.31
+backtest risk 2025-08-24 cost 114754.18
+backtest risk 2025-08-25 cost 74667.22
+backtest risk 2025-08-26 cost 77368.86
+backtest risk 2025-08-27 cost 74029.94
+backtest risk 2025-08-28 cost 76126.28
+backtest risk 2025-08-29 cost 67961.78
+backtest risk 2025-08-30 cost 38350.8
+backtest risk 2025-08-31 cost 107740.39
+backtest risk 2025-09-01 cost 74090.16
+backtest risk 2025-09-02 cost 66281.95
+backtest risk 2025-09-03 cost 61351.7
+backtest risk 2025-09-04 cost 65947.96
+backtest risk 2025-09-05 cost 60164.99
+backtest risk 2025-09-06 cost 31400.75
+backtest risk 2025-09-07 cost 98363.72
+backtest risk 2025-09-08 cost 71619.57
+backtest risk 2025-09-09 cost 70404.96
+backtest risk 2025-09-10 cost 69850.69
+backtest risk 2025-09-11 cost 66997.42
+backtest risk 2025-09-12 cost 58108.67
+backtest risk 2025-09-13 cost 31410.69
+backtest risk 2025-09-14 cost 105206.81
+backtest risk 2025-09-15 cost 77042.39
+backtest risk 2025-09-16 cost 66255.5
+backtest risk 2025-09-17 cost 71757.54
+backtest risk 2025-09-18 cost 65820.57
+backtest risk 2025-09-19 cost 60369.5
+backtest risk 2025-09-20 cost 34614.52
+backtest risk 2025-09-21 cost 92719.63
+backtest risk 2025-09-22 cost 73728.09
+backtest risk 2025-09-23 cost 70570.75
+backtest risk 2025-09-24 cost 71453.07
+backtest risk 2025-09-25 cost 68464.32
+backtest risk 2025-09-26 cost 62458.94
+backtest risk 2025-09-27 cost 34082.51
+backtest risk 2025-09-28 cost 109401.63
+backtest risk 2025-09-29 cost 77068.82
+backtest risk 2025-09-30 cost 77593.46
+backtest risk 2025-10-01 cost 69680.18
+backtest risk 2025-10-02 cost 61289.05
+backtest risk 2025-10-03 cost 53454.34
+backtest risk 2025-10-04 cost 28750.91
+backtest risk 2025-10-05 cost 100609.96
+backtest risk 2025-10-06 cost 66947.32
+backtest risk 2025-10-07 cost 67869.75
+backtest risk 2025-10-08 cost 65044.42
+backtest risk 2025-10-09 cost 62608.78
+backtest risk 2025-10-10 cost 56878.99
+backtest risk 2025-10-11 cost 28926.42
+backtest risk 2025-10-12 cost 107313.7
+backtest risk 2025-10-13 cost 69212.31
+backtest risk 2025-10-14 cost 68371.16
+backtest risk 2025-10-15 cost 65934.53
+backtest risk 2025-10-16 cost 67988.31
+backtest risk 2025-10-17 cost 63007.58
+backtest risk 2025-10-18 cost 30647.81
+backtest risk 2025-10-19 cost 119365.69
+backtest risk 2025-10-20 cost 77951.2
+backtest risk 2025-10-21 cost 70944.86
+backtest risk 2025-10-22 cost 72580.93
+backtest risk 2025-10-23 cost 69757.05
+backtest risk 2025-10-24 cost 62292.52
+backtest risk 2025-10-25 cost 32084.53
+backtest risk 2025-10-26 cost 113414.03
+backtest risk 2025-10-27 cost 74681.76
+backtest risk 2025-10-28 cost 73991.69
+backtest risk 2025-10-29 cost 72416.05
+backtest risk 2025-10-30 cost 73584.17
+backtest risk 2025-10-31 cost 62826.29
+backtest risk 2025-11-01 cost 35668.7
+backtest risk 2025-11-02 cost 125670.36
+backtest risk 2025-11-03 cost 78074.52
+backtest risk 2025-11-04 cost 76215.39
+backtest risk 2025-11-05 cost 75497.49
+backtest risk 2025-11-06 cost 78303.83
+backtest risk 2025-11-07 cost 70549.68
+backtest risk 2025-11-08 cost 38608.17
+backtest risk 2025-11-09 cost 128462.86
+backtest risk 2025-11-10 cost 84146.1
+backtest risk 2025-11-11 cost 79296.96
+backtest risk 2025-11-12 cost 80182.86
+backtest risk 2025-11-13 cost 76484.11
+backtest risk 2025-11-14 cost 70269.95
+backtest risk 2025-11-15 cost 41834.29
+backtest risk 2025-11-16 cost 132144.38
+backtest risk 2025-11-17 cost 85748.74
+backtest risk 2025-11-18 cost 79972.4
+backtest risk 2025-11-19 cost 83286.74
+backtest risk 2025-11-20 cost 81353.73
+backtest risk 2025-11-21 cost 71501.73
+backtest risk 2025-11-22 cost 41840.41
+backtest risk 2025-11-23 cost 127752.68
+backtest risk 2025-11-24 cost 85236.75
+backtest risk 2025-11-25 cost 82939.26
+backtest risk 2025-11-26 cost 80337.12
+backtest risk 2025-11-27 cost 81172.02
+backtest risk 2025-11-28 cost 70762.67
+backtest risk 2025-11-29 cost 43331.01
+backtest risk 2025-11-30 cost 136255.05
+backtest risk 2025-12-01 cost 97450.02
+backtest risk 2025-12-02 cost 91417.61
+backtest risk 2025-12-03 cost 88988.75
+backtest risk 2025-12-04 cost 91017.31
+backtest risk 2025-12-05 cost 79678.69
+backtest risk 2025-12-06 cost 51748.23
+backtest risk 2025-12-07 cost 141822.23
+backtest risk 2025-12-08 cost 94521.17
+backtest risk 2025-12-09 cost 93310.27
+backtest risk 2025-12-10 cost 87839.05
+backtest risk 2025-12-11 cost 91134.56
+backtest risk 2025-12-12 cost 78970.18
+backtest risk 2025-12-13 cost 52717.01
+backtest risk 2025-12-14 cost 142084.93
+backtest risk 2025-12-15 cost 94951.34
+backtest risk 2025-12-16 cost 92029.85
+backtest risk 2025-12-17 cost 91742.88
+backtest risk 2025-12-18 cost 92162.28
+backtest risk 2025-12-19 cost 81917.77
+backtest risk 2025-12-20 cost 53144.44
+backtest risk 2025-12-21 cost 143183.47
+backtest risk 2025-12-22 cost 96958.6
+backtest risk 2025-12-23 cost 90910.22
+backtest risk 2025-12-24 cost 92615.47
+backtest risk 2025-12-25 cost 88563.28
+backtest risk 2025-12-26 cost 81415.5
+backtest risk 2025-12-27 cost 52383.36
+backtest risk 2025-12-28 cost 138264.41
+backtest risk 2025-12-29 cost 93843.19
+backtest risk 2025-12-30 cost 92376.42
+backtest risk 2025-12-31 cost 90546.16
+backtest neutral 2025-02-01 cost 24448.66
+backtest neutral 2025-02-02 cost 158749.09
+backtest neutral 2025-02-03 cost 60328.47
+backtest neutral 2025-02-04 cost 59549.95
+backtest neutral 2025-02-05 cost 61850.3
+backtest neutral 2025-02-06 cost 58669.93
+backtest neutral 2025-02-07 cost 53323.93
+backtest neutral 2025-02-08 cost 25148.78
+backtest neutral 2025-02-09 cost 166336.76
+backtest neutral 2025-02-10 cost 62973.43
+backtest neutral 2025-02-11 cost 58552.88
+backtest neutral 2025-02-12 cost 53521.14
+backtest neutral 2025-02-13 cost 55253.17
+backtest neutral 2025-02-14 cost 46463.77
+backtest neutral 2025-02-15 cost 23075.44
+backtest neutral 2025-02-16 cost 156621.23
+backtest neutral 2025-02-17 cost 58529.25
+backtest neutral 2025-02-18 cost 53112.43
+backtest neutral 2025-02-19 cost 56924.44
+backtest neutral 2025-02-20 cost 53692.96
+backtest neutral 2025-02-21 cost 45523.15
+backtest neutral 2025-02-22 cost 22380.45
+backtest neutral 2025-02-23 cost 144200.15
+backtest neutral 2025-02-24 cost 54686.51
+backtest neutral 2025-02-25 cost 51485.43
+backtest neutral 2025-02-26 cost 50407.83
+backtest neutral 2025-02-27 cost 54393.14
+backtest neutral 2025-02-28 cost 42388.65
+backtest neutral 2025-03-01 cost 22065.44
+backtest neutral 2025-03-02 cost 157986.32
+backtest neutral 2025-03-03 cost 60722.97
+backtest neutral 2025-03-04 cost 53324.59
+backtest neutral 2025-03-05 cost 48584.88
+backtest neutral 2025-03-06 cost 47527.02
+backtest neutral 2025-03-07 cost 42065.36
+backtest neutral 2025-03-08 cost 20962.65
+backtest neutral 2025-03-09 cost 130102.86
+backtest neutral 2025-03-10 cost 51651.25
+backtest neutral 2025-03-11 cost 51786.02
+backtest neutral 2025-03-12 cost 45365.39
+backtest neutral 2025-03-13 cost 55517.18
+backtest neutral 2025-03-14 cost 42692.03
+backtest neutral 2025-03-15 cost 20316.58
+backtest neutral 2025-03-16 cost 127731.47
+backtest neutral 2025-03-17 cost 50600.61
+backtest neutral 2025-03-18 cost 54618.55
+backtest neutral 2025-03-19 cost 44577.82
+backtest neutral 2025-03-20 cost 44270.43
+backtest neutral 2025-03-21 cost 40404.09
+backtest neutral 2025-03-22 cost 18872.74
+backtest neutral 2025-03-23 cost 115196.8
+backtest neutral 2025-03-24 cost 47788.3
+backtest neutral 2025-03-25 cost 50180.17
+backtest neutral 2025-03-26 cost 43503.36
+backtest neutral 2025-03-27 cost 44398.76
+backtest neutral 2025-03-28 cost 37647.19
+backtest neutral 2025-03-29 cost 18705.43
+backtest neutral 2025-03-30 cost 117552.17
+backtest neutral 2025-03-31 cost 46330.19
+backtest neutral 2025-04-01 cost 48500.84
+backtest neutral 2025-04-02 cost 52565.57
+backtest neutral 2025-04-03 cost 42435.68
+backtest neutral 2025-04-04 cost 35916.05
+backtest neutral 2025-04-05 cost 18105.07
+backtest neutral 2025-04-06 cost 112918.52
+backtest neutral 2025-04-07 cost 44564.67
+backtest neutral 2025-04-08 cost 48245.78
+backtest neutral 2025-04-09 cost 51689.89
+backtest neutral 2025-04-10 cost 42147.58
+backtest neutral 2025-04-11 cost 34596.98
+backtest neutral 2025-04-12 cost 17960.84
+backtest neutral 2025-04-13 cost 113739.92
+backtest neutral 2025-04-14 cost 46741.59
+backtest neutral 2025-04-15 cost 41394.17
+backtest neutral 2025-04-16 cost 49686.63
+backtest neutral 2025-04-17 cost 41769.01
+backtest neutral 2025-04-18 cost 33214.56
+backtest neutral 2025-04-19 cost 17396.98
+backtest neutral 2025-04-20 cost 113330.89
+backtest neutral 2025-04-21 cost 43585.57
+backtest neutral 2025-04-22 cost 41942.3
+backtest neutral 2025-04-23 cost 42527.4
+backtest neutral 2025-04-24 cost 37708.65
+backtest neutral 2025-04-25 cost 30781.09
+backtest neutral 2025-04-26 cost 17388.07
+backtest neutral 2025-04-27 cost 106799.11
+backtest neutral 2025-04-28 cost 49815.6
+backtest neutral 2025-04-29 cost 44410.07
+backtest neutral 2025-04-30 cost 41548.74
+backtest neutral 2025-05-01 cost 45908.46
+backtest neutral 2025-05-02 cost 34761.54
+backtest neutral 2025-05-03 cost 19981.66
+backtest neutral 2025-05-04 cost 103166.99
+backtest neutral 2025-05-05 cost 54142.07
+backtest neutral 2025-05-06 cost 46270.54
+backtest neutral 2025-05-07 cost 45410.39
+backtest neutral 2025-05-08 cost 43257.73
+backtest neutral 2025-05-09 cost 36701.27
+backtest neutral 2025-05-10 cost 19534.64
+backtest neutral 2025-05-11 cost 110860.51
+backtest neutral 2025-05-12 cost 47635.63
+backtest neutral 2025-05-13 cost 50387.68
+backtest neutral 2025-05-14 cost 41449.51
+backtest neutral 2025-05-15 cost 42869.99
+backtest neutral 2025-05-16 cost 35302.18
+backtest neutral 2025-05-17 cost 20116.38
+backtest neutral 2025-05-18 cost 111324.38
+backtest neutral 2025-05-19 cost 44061.66
+backtest neutral 2025-05-20 cost 49032.11
+backtest neutral 2025-05-21 cost 43632.67
+backtest neutral 2025-05-22 cost 43278.79
+backtest neutral 2025-05-23 cost 34033.53
+backtest neutral 2025-05-24 cost 17047.37
+backtest neutral 2025-05-25 cost 112049.09
+backtest neutral 2025-05-26 cost 48623.81
+backtest neutral 2025-05-27 cost 45967.82
+backtest neutral 2025-05-28 cost 43911.54
+backtest neutral 2025-05-29 cost 42649.12
+backtest neutral 2025-05-30 cost 36540.84
+backtest neutral 2025-05-31 cost 18856.71
+backtest neutral 2025-06-01 cost 164958.22
+backtest neutral 2025-06-02 cost 58612.67
+backtest neutral 2025-06-03 cost 59737.73
+backtest neutral 2025-06-04 cost 52600.41
+backtest neutral 2025-06-05 cost 55981.73
+backtest neutral 2025-06-06 cost 49223.56
+backtest neutral 2025-06-07 cost 27124.15
+backtest neutral 2025-06-08 cost 113427.8
+backtest neutral 2025-06-09 cost 64542.97
+backtest neutral 2025-06-10 cost 60939.64
+backtest neutral 2025-06-11 cost 64026.03
+backtest neutral 2025-06-12 cost 57651.21
+backtest neutral 2025-06-13 cost 48952.93
+backtest neutral 2025-06-14 cost 24439.71
+backtest neutral 2025-06-15 cost 147042.02
+backtest neutral 2025-06-16 cost 61022.53
+backtest neutral 2025-06-17 cost 55355.04
+backtest neutral 2025-06-18 cost 57708.36
+backtest neutral 2025-06-19 cost 54373.13
+backtest neutral 2025-06-20 cost 48234.33
+backtest neutral 2025-06-21 cost 24493.13
+backtest neutral 2025-06-22 cost 147972.39
+backtest neutral 2025-06-23 cost 54871.91
+backtest neutral 2025-06-24 cost 70855.45
+backtest neutral 2025-06-25 cost 60043.43
+backtest neutral 2025-06-26 cost 51890.93
+backtest neutral 2025-06-27 cost 47705.52
+backtest neutral 2025-06-28 cost 24656.35
+backtest neutral 2025-06-29 cost 146998.03
+backtest neutral 2025-06-30 cost 55429.97
+backtest neutral 2025-07-01 cost 58005.18
+backtest neutral 2025-07-02 cost 60701.34
+backtest neutral 2025-07-03 cost 73352.02
+backtest neutral 2025-07-04 cost 57732.6
+backtest neutral 2025-07-05 cost 29874.65
+backtest neutral 2025-07-06 cost 160576.89
+backtest neutral 2025-07-07 cost 64359.2
+backtest neutral 2025-07-08 cost 61748.82
+backtest neutral 2025-07-09 cost 58665.22
+backtest neutral 2025-07-10 cost 59070.15
+backtest neutral 2025-07-11 cost 52082.03
+backtest neutral 2025-07-12 cost 29667.66
+backtest neutral 2025-07-13 cost 126829.99
+backtest neutral 2025-07-14 cost 57016.82
+backtest neutral 2025-07-15 cost 57273.13
+backtest neutral 2025-07-16 cost 56787.57
+backtest neutral 2025-07-17 cost 59201.32
+backtest neutral 2025-07-18 cost 52292.55
+backtest neutral 2025-07-19 cost 28820.22
+backtest neutral 2025-07-20 cost 133902.54
+backtest neutral 2025-07-21 cost 59731.2
+backtest neutral 2025-07-22 cost 58674.81
+backtest neutral 2025-07-23 cost 57604.89
+backtest neutral 2025-07-24 cost 57602.61
+backtest neutral 2025-07-25 cost 51160.14
+backtest neutral 2025-07-26 cost 28507.27
+backtest neutral 2025-07-27 cost 144128.23
+backtest neutral 2025-07-28 cost 61498.36
+backtest neutral 2025-07-29 cost 60166.65
+backtest neutral 2025-07-30 cost 56513.38
+backtest neutral 2025-07-31 cost 54073.27
+backtest neutral 2025-08-01 cost 52813.85
+backtest neutral 2025-08-02 cost 27157.36
+backtest neutral 2025-08-03 cost 119283.14
+backtest neutral 2025-08-04 cost 53148.47
+backtest neutral 2025-08-05 cost 54335.35
+backtest neutral 2025-08-06 cost 55265.0
+backtest neutral 2025-08-07 cost 55105.66
+backtest neutral 2025-08-08 cost 43814.14
+backtest neutral 2025-08-09 cost 26963.59
+backtest neutral 2025-08-10 cost 134375.37
+backtest neutral 2025-08-11 cost 58291.82
+backtest neutral 2025-08-12 cost 53014.65
+backtest neutral 2025-08-13 cost 52724.99
+backtest neutral 2025-08-14 cost 54353.86
+backtest neutral 2025-08-15 cost 46919.69
+backtest neutral 2025-08-16 cost 27653.05
+backtest neutral 2025-08-17 cost 131673.57
+backtest neutral 2025-08-18 cost 57154.83
+backtest neutral 2025-08-19 cost 52326.32
+backtest neutral 2025-08-20 cost 65991.86
+backtest neutral 2025-08-21 cost 54031.68
+backtest neutral 2025-08-22 cost 46370.54
+backtest neutral 2025-08-23 cost 27788.18
+backtest neutral 2025-08-24 cost 134807.91
+backtest neutral 2025-08-25 cost 60885.04
+backtest neutral 2025-08-26 cost 58933.63
+backtest neutral 2025-08-27 cost 55068.85
+backtest neutral 2025-08-28 cost 59454.19
+backtest neutral 2025-08-29 cost 49732.42
+backtest neutral 2025-08-30 cost 27304.42
+backtest neutral 2025-08-31 cost 131592.25
+backtest neutral 2025-09-01 cost 51786.78
+backtest neutral 2025-09-02 cost 49092.74
+backtest neutral 2025-09-03 cost 44316.29
+backtest neutral 2025-09-04 cost 49015.62
+backtest neutral 2025-09-05 cost 40787.11
+backtest neutral 2025-09-06 cost 21780.23
+backtest neutral 2025-09-07 cost 124370.77
+backtest neutral 2025-09-08 cost 46442.98
+backtest neutral 2025-09-09 cost 49893.53
+backtest neutral 2025-09-10 cost 59223.93
+backtest neutral 2025-09-11 cost 47592.44
+backtest neutral 2025-09-12 cost 39788.71
+backtest neutral 2025-09-13 cost 21197.01
+backtest neutral 2025-09-14 cost 129284.96
+backtest neutral 2025-09-15 cost 50841.63
+backtest neutral 2025-09-16 cost 47334.83
+backtest neutral 2025-09-17 cost 50738.81
+backtest neutral 2025-09-18 cost 45542.67
+backtest neutral 2025-09-19 cost 41328.02
+backtest neutral 2025-09-20 cost 23158.35
+backtest neutral 2025-09-21 cost 117939.8
+backtest neutral 2025-09-22 cost 51789.51
+backtest neutral 2025-09-23 cost 48940.88
+backtest neutral 2025-09-24 cost 52390.33
+backtest neutral 2025-09-25 cost 48193.67
+backtest neutral 2025-09-26 cost 42361.41
+backtest neutral 2025-09-27 cost 28028.96
+backtest neutral 2025-09-28 cost 126755.58
+backtest neutral 2025-09-29 cost 53235.68
+backtest neutral 2025-09-30 cost 50700.85
+backtest neutral 2025-10-01 cost 47868.55
+backtest neutral 2025-10-02 cost 43826.38
+backtest neutral 2025-10-03 cost 35613.61
+backtest neutral 2025-10-04 cost 20642.33
+backtest neutral 2025-10-05 cost 110490.88
+backtest neutral 2025-10-06 cost 48734.26
+backtest neutral 2025-10-07 cost 51042.39
+backtest neutral 2025-10-08 cost 44567.29
+backtest neutral 2025-10-09 cost 41818.18
+backtest neutral 2025-10-10 cost 38514.62
+backtest neutral 2025-10-11 cost 20555.24
+backtest neutral 2025-10-12 cost 123269.31
+backtest neutral 2025-10-13 cost 49725.69
+backtest neutral 2025-10-14 cost 51633.48
+backtest neutral 2025-10-15 cost 46424.85
+backtest neutral 2025-10-16 cost 47321.57
+backtest neutral 2025-10-17 cost 42997.79
+backtest neutral 2025-10-18 cost 22205.93
+backtest neutral 2025-10-19 cost 133242.31
+backtest neutral 2025-10-20 cost 58035.36
+backtest neutral 2025-10-21 cost 50733.54
+backtest neutral 2025-10-22 cost 52286.05
+backtest neutral 2025-10-23 cost 48368.27
+backtest neutral 2025-10-24 cost 41837.62
+backtest neutral 2025-10-25 cost 21926.28
+backtest neutral 2025-10-26 cost 129089.03
+backtest neutral 2025-10-27 cost 53073.97
+backtest neutral 2025-10-28 cost 54014.34
+backtest neutral 2025-10-29 cost 53877.67
+backtest neutral 2025-10-30 cost 51592.66
+backtest neutral 2025-10-31 cost 41503.91
+backtest neutral 2025-11-01 cost 22704.06
+backtest neutral 2025-11-02 cost 139531.25
+backtest neutral 2025-11-03 cost 55800.35
+backtest neutral 2025-11-04 cost 54094.19
+backtest neutral 2025-11-05 cost 52260.8
+backtest neutral 2025-11-06 cost 58895.29
+backtest neutral 2025-11-07 cost 47260.85
+backtest neutral 2025-11-08 cost 22403.81
+backtest neutral 2025-11-09 cost 150275.7
+backtest neutral 2025-11-10 cost 59993.74
+backtest neutral 2025-11-11 cost 56554.23
+backtest neutral 2025-11-12 cost 53710.96
+backtest neutral 2025-11-13 cost 52339.93
+backtest neutral 2025-11-14 cost 46310.98
+backtest neutral 2025-11-15 cost 23974.71
+backtest neutral 2025-11-16 cost 155742.88
+backtest neutral 2025-11-17 cost 61464.71
+backtest neutral 2025-11-18 cost 55838.53
+backtest neutral 2025-11-19 cost 59653.41
+backtest neutral 2025-11-20 cost 56909.98
+backtest neutral 2025-11-21 cost 47870.06
+backtest neutral 2025-11-22 cost 24414.48
+backtest neutral 2025-11-23 cost 149318.61
+backtest neutral 2025-11-24 cost 61092.34
+backtest neutral 2025-11-25 cost 61865.21
+backtest neutral 2025-11-26 cost 56505.4
+backtest neutral 2025-11-27 cost 57479.18
+backtest neutral 2025-11-28 cost 48262.05
+backtest neutral 2025-11-29 cost 24443.66
+backtest neutral 2025-11-30 cost 159923.35
+backtest neutral 2025-12-01 cost 76939.3
+backtest neutral 2025-12-02 cost 68570.02
+backtest neutral 2025-12-03 cost 64465.07
+backtest neutral 2025-12-04 cost 65955.23
+backtest neutral 2025-12-05 cost 56832.56
+backtest neutral 2025-12-06 cost 30169.26
+backtest neutral 2025-12-07 cost 167418.65
+backtest neutral 2025-12-08 cost 68956.74
+backtest neutral 2025-12-09 cost 68090.85
+backtest neutral 2025-12-10 cost 64204.7
+backtest neutral 2025-12-11 cost 66812.34
+backtest neutral 2025-12-12 cost 55539.32
+backtest neutral 2025-12-13 cost 30707.18
+backtest neutral 2025-12-14 cost 169741.94
+backtest neutral 2025-12-15 cost 70365.76
+backtest neutral 2025-12-16 cost 68504.58
+backtest neutral 2025-12-17 cost 67072.48
+backtest neutral 2025-12-18 cost 66090.97
+backtest neutral 2025-12-19 cost 57679.21
+backtest neutral 2025-12-20 cost 28797.51
+backtest neutral 2025-12-21 cost 174138.78
+backtest neutral 2025-12-22 cost 69659.46
+backtest neutral 2025-12-23 cost 67113.33
+backtest neutral 2025-12-24 cost 61851.74
+backtest neutral 2025-12-25 cost 62779.5
+backtest neutral 2025-12-26 cost 56173.68
+backtest neutral 2025-12-27 cost 28718.29
+backtest neutral 2025-12-28 cost 165758.03
+backtest neutral 2025-12-29 cost 67630.49
+backtest neutral 2025-12-30 cost 67023.75
+backtest neutral 2025-12-31 cost 67948.5
+SUMMARY {"risk": {"normal_cost_yuan": 20192206.895422857, "emergency_cost_yuan": 4328671.914977847, "total_cost_yuan": 24520878.810400702, "purchase_kWh": 28633004.072597295, "emergency_kWh": 947254.8665142062, "surplus_spill_kWh": 10365544.158257704, "start_soc_kWh": 10691.657650070038, "end_soc_kWh": 10360.254526278743, "emergency_intervals": 5340, "charge_kWh": 6714860.78262392, "discharge_kWh": 5439335.496736787}, "neutral": {"normal_cost_yuan": 14145329.271548491, "emergency_cost_yuan": 5948624.102087578, "total_cost_yuan": 20093953.373636067, "purchase_kWh": 21391426.156689383, "emergency_kWh": 1423301.989408627, "surplus_spill_kWh": 3713133.4324162556, "start_soc_kWh": 10691.657650070036, "end_soc_kWh": 8416.082932453248, "emergency_intervals": 5864, "charge_kWh": 6128701.241899688, "discharge_kWh": 4966296.023184603}, "forecast_errors": [{"series": "load", "MAE_kW": 573.5745036536827, "RMSE_kW": 1017.6298598513608}, {"series": "pv", "MAE_kW": 185.34649152736193, "RMSE_kW": 375.1748781365903}], "validation": {"max_physical_residual_kWh": 1.0231815394945443e-12, "date_count": 334, "interval_count_per_policy": 48096, "physical_tolerance_kWh": 2e-05, "cross_day_continuity": "passed"}, "risk_vs_neutral": {"total_cost_yuan": 22.031132223950056, "emergency_kWh": -33.446670238423216, "emergency_cost_yuan": -27.23238448603995}, "parameters": {"risk": {"index": 1, "kappa": 0.6895775000000001, "alpha": 0.8, "lambda": 0.25, "normal_yuan": 777303.6367011052, "emergency_yuan": 132954.3400198827, "total_yuan": 910257.9767209878, "end_soc_kWh": 10691.657650070038, "emergency_kWh": 29008.221262721192}, "neutral": {"index": 0, "kappa": 0.6895775000000001, "alpha": 0.9, "lambda": 0, "normal_yuan": 550066.5221292659, "emergency_yuan": 180807.00411053092, "total_yuan": 730873.5262397969, "end_soc_kWh": 10691.657650070036, "emergency_kWh": 45460.589551001045}}}

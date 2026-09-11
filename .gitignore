@@ -7,6 +7,7 @@ __pycache__/
 env/
 venv/
 .venv/
+代码/.deps/
 
 # LaTeX
 *.aux
@@ -35,6 +36,7 @@ Thumbs.db
 *~
 
 # Large Media & Temporary Downloads
+tmp/
 *.mp4
 *.wmv
 *.mkv

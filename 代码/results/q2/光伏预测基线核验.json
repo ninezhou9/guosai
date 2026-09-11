@@ -1,0 +1,5 @@
+{
+  "max_difference_kW": 9.094947017729282e-13,
+  "interpretation": "SARIMA with only nonseasonal AR terms and seasonal differencing uses zero late-night differences as recursion seeds; day-ahead PV forecast coincides with previous day",
+  "requires_no_claim_of_improvement": true
+}

@@ -1,0 +1,84 @@
+{
+  "command": "& \"C:\\Program Files\\Python313\\python.exe\" \"代码/q2_solution.py\"",
+  "python": "3.13.15",
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "random_seed": null,
+  "sampling": "all latest up to30 paired historical residual days, equal weights; deterministic",
+  "inputs": {
+    "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+    "基础数据\\C题.pdf": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+    "代码\\q2_solution.py": "4b70ec07d87926d7a473b659426cb74427a5f7062978473cd9512b3327c09417",
+    "代码\\q1_solution.py": "e76c55cec573da6edf5f03cd0c6afb8d56f8d457025706c7c1ab7cd369425d8f"
+  },
+  "outputs": {
+    "代码\\results\\q2\\forecasts.npz": "1333cbdaa7bfa7f3bccd86c050b7d3b3477bc9a499249715e58080fb54934dfe",
+    "代码\\results\\q2\\forecast_retry.jsonl": "8b7bd89593a8403df010f351d036c3b17c8ce8a9a37ae6f913c15c8f2f45209c",
+    "代码\\results\\q2\\january_warmup.npy": "0ae4f0946ad8ddac2af1b80913b2d3a3b458e4382a3fb7598d5aa466703df01f",
+    "代码\\results\\q2\\neutral_完整调度.csv": "711a408c16706eb9b9df16328ad106fde57edf81ef7321baa7cf06a7abd1ec1a",
+    "代码\\results\\q2\\result2_审核版.xlsx": "7f799a6f3c0e1aae1ca59134edbfa03a171394bc79c77d7e5cbe070c6108b086",
+    "代码\\results\\q2\\risk_完整调度.csv": "d4a621102fd475cc52d5a92e955f785a1bc52bab192d5c519739653304ff40d2",
+    "代码\\results\\q2\\summary.json": "9a30dbadc6d92ca7e83e9fc399dc90a3302376741dec518769a3770aadfe921f",
+    "代码\\results\\q2\\validation_0.npy": "e01dbe92f0ec2451ebdbca2afb37ac9163bcde43f93c23f23c2982497d85af30",
+    "代码\\results\\q2\\validation_1.npy": "1ce9c0e66f6d05f37a819797f2583d9578fe57fe477a01836c3aebcdd8906468",
+    "代码\\results\\q2\\validation_2.npy": "7b91c8803adcb09c625e393b4e0253f5811be791b43eaee4398403a123780ff6",
+    "代码\\results\\q2\\validation_3.npy": "746966ef5bffb1eb193da7e9e39b6d1b8956f22ccb99b4056ec29292554b6e0c",
+    "代码\\results\\q2\\validation_4.npy": "7c454482fc9864c7343596fc5010b5dd0388064872334b4f23d4e4c73e08fa88",
+    "代码\\results\\q2\\validation_5.npy": "7953654143aefe1f2ed4125200511b953f4def51fb1db3c04236b79bc54f37f4",
+    "代码\\results\\q2\\validation_6.npy": "4b2d44d48afadc7986b6bfac14048190eda4957449f8c88dfdd1f9222d66396e",
+    "代码\\results\\q2\\validation_7.npy": "f471755fbfeb83a946b746c00e53310214170e84a3eb3ca2ea4fa4e71a8d932c",
+    "代码\\results\\q2\\信息可用性清单.csv": "07c394fc38961a7e911116139271a6b1e7faa752eb4c85018b0cebc7d9c84e94",
+    "代码\\results\\q2\\光伏预测基线核验.json": "a1a9d0c6d4e1301fe672879edf74730cdf3348f2c5c24ee88112aacce85fb3b3",
+    "代码\\results\\q2\\数据审计.json": "4423e9d37cc8e337dbec1c112d6098092b5d27f702102cc86e4c70dd9c26cdb4",
+    "代码\\results\\q2\\无未来泄漏测试.json": "97d443175478f44f0a7a6748b0762f01ff454bf0379c56ab1a1bb1af9949bb63",
+    "代码\\results\\q2\\日前预测.csv": "8aaee0a6de759e2d303d4c95aa298b2af03216ac25dd3976e05fbc0afb14b2e0",
+    "代码\\results\\q2\\每日费用.csv": "fbb859a38e854fe40317f35ecf47389b420ac92b55fa844c0fe678903f0f2e03",
+    "代码\\results\\q2\\第二问结果审核.md": "de63e80c9e65b65941f39900c95860587371655ae6e304bba73a43bab73f629f",
+    "代码\\results\\q2\\计算缓存合同.json": "be1e2012d601603d65d21b2a403206a88dd28672372f572e8635a3917c9fc196",
+    "代码\\results\\q2\\预测模型选择.json": "5638d3aff9e0652a39c76f936ccf10554ca7f1fb3b2dad093af33ff8af42c88d",
+    "代码\\results\\q2\\风险参数选择.json": "82bb48ac13e4ea7e47c3855ca0e4ce8bc268f8f000f493f2a15038718362a1eb",
+    "代码\\figures\\q2\\3月20日预测对照.png": "b0d7714b77f783e211588c625cefdba4bcb45ffe4de4cb271c91083ab3ddae90",
+    "代码\\figures\\q2\\3月20日预测对照.svg": "5c3fe06ccc84deecd741c62e481d88a82566ac2997e43a63a039c1f66107102e",
+    "代码\\figures\\q2\\四个指定日储电量.png": "2c4b85c879dcb8e957f76fdb4aebf56726f0ca14f5f9c203fc381e08be028230",
+    "代码\\figures\\q2\\四个指定日储电量.svg": "61fa539355fe5e8be78a55525f0b3ab81c406652f6410e4c51481e9451e3676c",
+    "代码\\figures\\q2\\累计费用.png": "82f0f7f983d8bebac9336031eee0fcba6f243d7441b2d8284ecb0358c8e0a9bf",
+    "代码\\figures\\q2\\累计费用.svg": "9aba0701ebb600ce22e2c90c52bc112bce4edccdd350a88f90903867d5ab760c"
+  },
+  "parameters": {
+    "risk": {
+      "index": 1,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.8,
+      "lambda": 0.25,
+      "normal_yuan": 777303.6367011052,
+      "emergency_yuan": 132954.3400198827,
+      "total_yuan": 910257.9767209878,
+      "end_soc_kWh": 10691.657650070038,
+      "emergency_kWh": 29008.221262721192
+    },
+    "neutral": {
+      "index": 0,
+      "kappa": 0.6895775000000001,
+      "alpha": 0.9,
+      "lambda": 0,
+      "normal_yuan": 550066.5221292659,
+      "emergency_yuan": 180807.00411053092,
+      "total_yuan": 730873.5262397969,
+      "end_soc_kWh": 10691.657650070036,
+      "emergency_kWh": 45460.589551001045
+    }
+  },
+  "validation": {
+    "max_physical_residual_kWh": 1.0231815394945443e-12,
+    "date_count": 334,
+    "interval_count_per_policy": 48096,
+    "physical_tolerance_kWh": 2e-05,
+    "cross_day_continuity": "passed"
+  },
+  "status": "真实运行完成，结果待审核；用户指定结束时标，官方标签差异已注明",
+  "units": "all dispatch variables kWh; powers kW; price yuan/kWh"
+}

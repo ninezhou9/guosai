@@ -1,0 +1,55 @@
+{
+  "runtime": "C:\\Program Files\\Python313\\python.exe",
+  "python": "3.13.15",
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.1"
+  },
+  "command_from_project_root": "& \"C:\\Program Files\\Python313\\python.exe\" \"代码/q1_solution.py\"",
+  "random_seed": null,
+  "deterministic": true,
+  "parameters": {
+    "dt_hours": 0.16666666666666666,
+    "eta_charge": 0.9,
+    "eta_discharge": 0.9,
+    "power_kW": 5000,
+    "soc_bounds_kWh": [
+      1200,
+      10800
+    ],
+    "boundary_condition": "E_0 = E_144; common value optimized",
+    "tolerance": 1e-06,
+    "mip_rel_gap": 1e-09
+  },
+  "inputs": {
+    "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "基础数据\\C题.pdf": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+    "代码\\q1_solution.py": "e76c55cec573da6edf5f03cd0c6afb8d56f8d457025706c7c1ab7cd369425d8f"
+  },
+  "outputs": {
+    "代码\\results\\q1\\result1_审核版.xlsx": "c0c88988ce229ea2ff19253e432c289eb2157332d4156463485febd37512b231",
+    "代码\\results\\q1\\result1.xlsx": "59253e67dde6ad51c588fc2e2f6b8cb602db27e9ff08cd1d0579e9f150b5ba01",
+    "代码\\results\\q1\\summary.json": "f50a388140206f12e7c1604444b3098b4d577d6c598fe2f3c37b847676deac0b",
+    "代码\\results\\q1\\完整调度.csv": "fb4f2db94dfb4bc28e279d44c2962fb6c6520b7972c4d1c8085cf0b721c2db31",
+    "代码\\results\\q1\\第一问结果审核.md": "d8e91527456be635a0430a10e831af301ec559faa269653fcd71b45726b31b98",
+    "代码\\figures\\q1\\q1_dispatch.png": "239776a4ecf6dfb4463557096a053004ed4fc507c1e2a110966c8c16e02b3053",
+    "代码\\figures\\q1\\q1_dispatch.svg": "1443b3cd12847a8462855d2cd45ddf6658d92ef27c1878dc43735c5b9d9236c5"
+  },
+  "status": "真实计算完成；按用户指定结束时标映射，存在官方模板标签差异；结果待审核",
+  "validation": {
+    "balance_max_abs_kWh": 1.4921397450962104e-13,
+    "state_max_abs_kWh": 8.739675649849232e-13,
+    "cyclic_boundary_max_abs_kWh": 0.0,
+    "soc_bound_violation_kWh": 0.0,
+    "power_bound_violation_kWh": 0.0,
+    "simultaneous_charge_discharge_kWh": 0.0,
+    "nonnegative_violation_kWh": 0.0,
+    "curtailment_bound_violation_kWh": 0.0,
+    "cost_recalculation_error_yuan": 0.0,
+    "MILP_minus_LP_yuan": 1.4551915228366852e-11,
+    "daily_energy_error_kWh": 1.8189894035458565e-11,
+    "xlsx_roundtrip_max_abs_kWh": 4.547473508864641e-13
+  }
+}
