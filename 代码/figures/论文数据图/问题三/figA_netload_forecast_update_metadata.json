@@ -1,0 +1,101 @@
+{
+  "date": "2025-03-20",
+  "kind": "raw",
+  "selection": "First date specified in problem; fixed, not chosen by forecast performance.",
+  "actual_field": "main_intervals.csv: net_kwh * 6 = actual load - actual PV, kW",
+  "forecast_field": "conditional_forecasts.npz: load[d, :] - pv[d, k, :]",
+  "raw_forecast_field": "load[d, :] - pv[d, k, :]",
+  "date_index": 78,
+  "issue_index": {
+    "0:00": 0,
+    "6:00": 1,
+    "12:00": 2,
+    "18:00": 3
+  },
+  "plot_time": "10-minute interval midpoint",
+  "dpi": 300,
+  "colors": {
+    "actual": "#104E8B",
+    "forecast_00": "#7DAEEB",
+    "forecast_06": "#5BC0C9",
+    "forecast_12": "#E5B5B5",
+    "forecast_18": "#D85C5C"
+  },
+  "mae": [
+    {
+      "issue": "0:00",
+      "window": "0:00–24:00",
+      "n": 144,
+      "mae_kw": 343.60545738893046,
+      "rmse_kw": 488.97294377566186,
+      "pooled_mae_kw": 278.4618731273253
+    },
+    {
+      "issue": "6:00",
+      "window": "6:00–24:00",
+      "n": 108,
+      "mae_kw": 358.6707710120811,
+      "rmse_kw": 510.70092376423224,
+      "pooled_mae_kw": 234.95058034664828
+    },
+    {
+      "issue": "12:00",
+      "window": "12:00–24:00",
+      "n": 72,
+      "mae_kw": 160.34607760212378,
+      "rmse_kw": 207.011245655986,
+      "pooled_mae_kw": 176.77268942077518
+    },
+    {
+      "issue": "18:00",
+      "window": "18:00–24:00",
+      "n": 36,
+      "mae_kw": 120.20561629637066,
+      "rmse_kw": 146.6473540070844,
+      "pooled_mae_kw": 147.43094869936075
+    }
+  ],
+  "same_target_window_update_checks": [
+    {
+      "issue": "6:00",
+      "target_window": "6:00–24:00",
+      "previous_version_mae_kw": 327.6103063104232,
+      "updated_mae_kw": 234.95058034664828,
+      "reduction_percent": 28.28351983407271,
+      "representative_day_previous_mae_kw": 421.8064351254908,
+      "representative_day_updated_mae_kw": 358.6707710120811
+    },
+    {
+      "issue": "12:00",
+      "target_window": "12:00–24:00",
+      "previous_version_mae_kw": 235.14021529799646,
+      "updated_mae_kw": 176.77268942077518,
+      "reduction_percent": 24.822434479466352,
+      "representative_day_previous_mae_kw": 369.4308828035081,
+      "representative_day_updated_mae_kw": 160.34607760212378
+    },
+    {
+      "issue": "18:00",
+      "target_window": "18:00–24:00",
+      "previous_version_mae_kw": 147.57430341593903,
+      "updated_mae_kw": 147.43094869936075,
+      "reduction_percent": 0.09714070353713722,
+      "representative_day_previous_mae_kw": 120.20561629637066,
+      "representative_day_updated_mae_kw": 120.20561629637066
+    }
+  ],
+  "caveats": [
+    "Later forecasts begin only after release; no backfilling or curve offsets.",
+    "MAE across issue times covers different remaining horizons; not a pure information-value comparison.",
+    "Identical late-day forecasts remain overlapping; not artificially separated.",
+    "Forecast accuracy alone does not prove every purchase-plan revision is economical."
+  ],
+  "input_sha256": {
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\results\\conditional_forecasts.npz": "6111a0255df4cc229bfbf9825d7c149b6cd97ac821cafe8f9fd3453c22026f4e",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\results\\main_intervals.csv": "4439bfcd6192db7ba134c08a2153f105b065eadb209b3dc1ce0fbb73019a36b3",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\results\\manifest.json": "b2590b666c0a401afdcd47f5a42266a62c90e5d633ffe9a9c589f69045b1bb60"
+  },
+  "python": "3.13.15",
+  "matplotlib": "3.11.1",
+  "source_sha256": "f8ea7750a8598ca6f5328610cfc775425137b5b6acca01af4a08f63df31f606f"
+}
