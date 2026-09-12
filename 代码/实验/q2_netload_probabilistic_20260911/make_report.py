@@ -4,6 +4,7 @@ import json, csv, hashlib
 import numpy as np
 
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[2];OUT=BASE/'results'
+REPORT_PATH=ROOT/'论文写作'/'问题二'/'第二问_独立概率净负荷结果报告.md'
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def write(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -88,10 +89,11 @@ def main():
         "& 'C:/Program Files/Python313/python.exe' -X utf8 '代码/实验/q2_netload_probabilistic_20260911/make_report.py'",
         '```','',
         f"主程序记录状态 `{manifest['status']}`，本次记录运行时间 {manifest['seconds']:.2f} 秒；shell 退出码见对应运行记录。首次默认 GBK 读取中文缓存失败已通过 UTF-8 运行模式解决。",'']
-    (BASE/'实验结果报告.md').write_text('\n'.join(lines),encoding='utf-8')
+    REPORT_PATH.parent.mkdir(parents=True,exist_ok=True)
+    REPORT_PATH.write_text('\n'.join(lines),encoding='utf-8')
     write(OUT/'comparison.json',{'old_comparison':comparisons,'inventory_adjusted_costs':adjusted,'candidate_days':counts,'specified_days':specified})
     write(OUT/'report_manifest.json',{'report_script_sha256':sha(__file__),'inputs':{name:sha(OUT/name) for name in ['summary.json','validation.json','controller_selection.json','forecast_selection.json']},
-        'report_sha256':sha(BASE/'实验结果报告.md'),'comparison_sha256':sha(OUT/'comparison.json'),
+        'report_sha256':sha(REPORT_PATH),'comparison_sha256':sha(OUT/'comparison.json'),
         'command':'Python313/python.exe -X utf8 make_report.py','status':'generated from actual output'})
     print(json.dumps({'main':new['main'],'comparisons':comparisons,'preservation':protect},ensure_ascii=False,indent=2))
 

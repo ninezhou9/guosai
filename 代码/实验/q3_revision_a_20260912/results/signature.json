@@ -1,0 +1,45 @@
+{
+  "sources": {
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\q3_engine.py": "354e43d70ea0f526dd5bcbf4800d672b4d5659098765d34dcc60028824ac31fd",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\check_engine.py": "860970a43968d6e218190c86ff68aeab0363928769dd83501e563a2b47d08315",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\run_q3.py": "97c6e84d5c196dc8a63bd6cb5638e371f4c1336164c4730e17ce67c4868922b5"
+  },
+  "inputs": {
+    "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\C题.pdf": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+    "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+    "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+    "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\fresh_engine.py": "4d618b19f644af7d05b49c185ba1624b046b96e9464ed8ce215231c01af224ba",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\run_fresh.py": "3b29db33723e76500d4db3d27c605c2f4ecb1b647e10cf483b8cc23aac3e82ea",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\fresh_forecasts.npz": "a973066f5a8f7e0896e2b8111bc13e5a8d1edc9d75abff036030d0af09abd918",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\manifest.json": "d92be9fc3f66ca1008a2b42e9bee2f83a62926b4daebfb6e9754fab8397556f9",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\result2.xlsx": "6de1de3de256f25e41aed12a43643be24e7314607e4e9342f3f32a02440e7b4b",
+    "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\main.npy": "445d7d4f1558d1b7d44849f754611c701b4a71b843db176355fc6b2fd932f8b7"
+  },
+  "end_day": 365,
+  "policies": [
+    "mask_000",
+    "mask_001",
+    "mask_010",
+    "mask_011",
+    "mask_100",
+    "mask_101",
+    "mask_110",
+    "mask_111",
+    "forecast_only"
+  ],
+  "settlement": "incremental revisions; refund old base price plus 50% penalty; 150% upward price",
+  "dp_terminal": 0,
+  "grid_kwh": 60,
+  "atoms": 7,
+  "quantiles": [
+    0.2,
+    0.5,
+    0.65,
+    0.8,
+    0.9
+  ],
+  "load_forecast": "read-only hash-verified Q2 fresh_forecasts separate[:,0]",
+  "reference_Q2_source_hash_rule": "exact bytes or exact CRLF-to-LF normalization"
+}

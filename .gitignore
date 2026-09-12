@@ -32,6 +32,7 @@ venv/
 Thumbs.db
 .idea/
 .vscode/
+.workbuddy/
 *.swp
 *~
 

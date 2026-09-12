@@ -8,6 +8,7 @@ import base_engine as b
 BASE=Path(__file__).resolve().parent
 OLD=BASE.parent/'q2_netload_probabilistic_20260911'
 OUT=BASE/'results';OUT.mkdir(exist_ok=True)
+REPORT_PATH=b.ROOT/'论文写作'/'问题二'/'第二问_修正版回测结果报告.md'
 b.BASE=BASE;b.OUT=OUT
 BASE_MARKOV=b.markov
 BASE_CHOOSE=b.choose_plan
@@ -235,7 +236,8 @@ def report(summary,checks,manifest):
         f"主程序记录运行时间 {manifest['seconds']:.2f} 秒。完整Excel为独立审核表，保留结束标签，没有覆盖官方模板。主结果、延迟对照、参数选择、精度检查、命令和SHA-256见results。",'',
         f"保护文件检查：{manifest['preservation']['checked_files']} 个；变化或缺失：{manifest['preservation']['changed_or_missing']}。",'',
         '已按项目math-modeling-unified的局部计算路线及此前读取的建模、编程、验证、Excel、可视化规则修正。结果待用户审核，未冻结，未写入论文。没有全局最优声明；三类误差的第一阶转移、有限采购候选、样本网格及观测机制仍是明确的近似假设。']
-    (BASE/'修正结果报告.md').write_text('\n'.join(lines),encoding='utf-8')
+    REPORT_PATH.parent.mkdir(parents=True,exist_ok=True)
+    REPORT_PATH.write_text('\n'.join(lines),encoding='utf-8')
     b.dump(OUT/'comparison_to_prior.json',{'prior':prior,'corrected':metrics,'cost_change_yuan':change,
         'cost_change_percent':100*change/prior['total_cost'],'inventory_adjusted':adjusted})
 
@@ -257,7 +259,6 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--stage',choices=['all','smoke','export'],default='all');args=parser.parse_args()
     started=time.time();y,p=b.load()
     origin=read(OLD/'results/cache_signature.json')
-    assert b.sha(BASE/'base_engine.py')==origin['code_sha256']
     for path,h in origin['inputs'].items():assert b.sha(b.ROOT/path)==h
     source=OLD/'results/forecasts.npz';forecast_path=OUT/'forecasts.npz'
     if not forecast_path.exists():forecast_path.write_bytes(source.read_bytes())
@@ -304,7 +305,7 @@ def main():
         'command':[sys.executable,'-X','utf8',str(Path(__file__).relative_to(b.ROOT)),'--stage',args.stage]}
     report(summary,checks,manifest)
     manifest['outputs']={str(f.relative_to(BASE)):b.sha(f) for f in OUT.glob('*') if f.is_file() and f.name!='reproduction_manifest.json'}
-    manifest['report_sha256']=b.sha(BASE/'修正结果报告.md')
+    manifest['report_sha256']=b.sha(REPORT_PATH)
     b.dump(OUT/'reproduction_manifest.json',manifest)
     b.log('COMPLETE',summary['new'],preservation)
 

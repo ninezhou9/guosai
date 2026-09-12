@@ -1,0 +1,201 @@
+{
+  "status": "computed_verified_pending_user_results_review",
+  "created": "2026-09-12T10:59:50.351033",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "lightgbm": "4.7.0",
+  "openpyxl": "3.1.5",
+  "elapsed_seconds": 507.2979686000035,
+  "signature": {
+    "sources": {
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\q3_engine.py": "354e43d70ea0f526dd5bcbf4800d672b4d5659098765d34dcc60028824ac31fd",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\check_engine.py": "860970a43968d6e218190c86ff68aeab0363928769dd83501e563a2b47d08315",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q3_revision_a_20260912\\run_q3.py": "97c6e84d5c196dc8a63bd6cb5638e371f4c1336164c4730e17ce67c4868922b5"
+    },
+    "inputs": {
+      "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\C题.pdf": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+      "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "C:\\Users\\sss\\Desktop\\国赛\\基础数据\\result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\fresh_engine.py": "4d618b19f644af7d05b49c185ba1624b046b96e9464ed8ce215231c01af224ba",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\run_fresh.py": "3b29db33723e76500d4db3d27c605c2f4ecb1b647e10cf483b8cc23aac3e82ea",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\fresh_forecasts.npz": "a973066f5a8f7e0896e2b8111bc13e5a8d1edc9d75abff036030d0af09abd918",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\manifest.json": "d92be9fc3f66ca1008a2b42e9bee2f83a62926b4daebfb6e9754fab8397556f9",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\result2.xlsx": "6de1de3de256f25e41aed12a43643be24e7314607e4e9342f3f32a02440e7b4b",
+      "C:\\Users\\sss\\Desktop\\国赛\\代码\\实验\\q2_fresh_20260912\\results\\main.npy": "445d7d4f1558d1b7d44849f754611c701b4a71b843db176355fc6b2fd932f8b7"
+    },
+    "end_day": 365,
+    "policies": [
+      "mask_000",
+      "mask_001",
+      "mask_010",
+      "mask_011",
+      "mask_100",
+      "mask_101",
+      "mask_110",
+      "mask_111",
+      "forecast_only"
+    ],
+    "settlement": "incremental revisions; refund old base price plus 50% penalty; 150% upward price",
+    "dp_terminal": 0,
+    "grid_kwh": 60,
+    "atoms": 7,
+    "quantiles": [
+      0.2,
+      0.5,
+      0.65,
+      0.8,
+      0.9
+    ],
+    "load_forecast": "read-only hash-verified Q2 fresh_forecasts separate[:,0]",
+    "reference_Q2_source_hash_rule": "exact bytes or exact CRLF-to-LF normalization"
+  },
+  "physical_checks": {
+    "mask_000": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_001": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_010": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_011": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_100": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_101": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_110": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "mask_111": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    },
+    "forecast_only": {
+      "balance": 9.094947017729282e-13,
+      "state": 9.094947017729282e-13,
+      "continuity": 0.0,
+      "simultaneous": 0.0,
+      "soc": 0.0,
+      "power": 1.1368683772161603e-13,
+      "nonnegative": 0.0,
+      "emergency_charging": 0.0
+    }
+  },
+  "reused_Q2_forecast_files": 1,
+  "new_forecast_model_fits": 0,
+  "new_Q3_dispatch": true,
+  "protected_files_unchanged": true,
+  "command": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "代码\\实验\\q3_revision_a_20260912\\run_q3.py"
+  ],
+  "output_hashes": {
+    "candidate_scores.csv": "3c91afad619e8f1de095d6237ec06a827aec931a87b0b4e37788c6c1649e65d4",
+    "conditional_forecasts.npz": "6111a0255df4cc229bfbf9825d7c149b6cd97ac821cafe8f9fd3453c22026f4e",
+    "daily_summary.csv": "b31cf8f22cf51be4d60e08f0e23aab3a61fae7d655881e9a508a3cc977028d9a",
+    "delivery_checks.json": "771cb14fedf347dce64c9966f43d7a9cf1ec65732a9651886ee22b3bb8dd38da",
+    "engine_checks.json": "e0c7cca031ff9d9cf997a7442d06e9a8ce978a3be29bac24d67ff3be1007a9c4",
+    "forecast_metrics.json": "862fb3635203f00d8f78112ba92e7bca714fc19e516577a442eeac8a1175a77b",
+    "january_warmup.npy": "ec734236d5b427c7969f4c7365f95da6f009cfa7cac4120246a64873e639e296",
+    "main_intervals.csv": "4439bfcd6192db7ba134c08a2153f105b065eadb209b3dc1ce0fbb73019a36b3",
+    "result3.xlsx": "fcc02bbbf0ce834d4e1c1ec6de9b0be6e084cb55c53b8fc9187b9b2ca74ebfed",
+    "revision_ledger.csv": "ec4ade3e9054ef7d82622f2735c0af4acede7d8700b7dedd8d32e3dc658acaa3",
+    "sensitivity.csv": "8a0d0a24f67e395a94e2d66a7c31d00b7a2d9db650e167f48885f133bd9a9289",
+    "signature.json": "06a5dbc3dbf13ecef24032d77c9634da2ecebb74ade769ee789298b439fb7706",
+    "solutions.npz": "60a4d9ff40931df080dd8b6e55efe75f7bdf5f1a7edc37fa7b0948570528a3ab",
+    "summary.json": "62ae9e0463a971b2d46d3010489db558adf68bdd283521af868215405bddadc7",
+    "指定日表1.csv": "be6bdff8a610a26662f9ae92db915dab10250d228aa745045d5eeebdaa46e9a9",
+    "指定日表2.csv": "1157e89fab9ece50dc41eda4b5bdbd9f576960f1ce1f518f7466b48f8265bc2a",
+    "指定日表3.csv": "6e1fc7e59e3cfa3989bf426a5aa1da5a7b4eb6eb870344c03e3d7bb83b970c48",
+    "累计费用.png": "ba0c40740e99a2f3226dfd6c5d406568d5e8f31edac5ba588dc885ce7d338eb8",
+    "累计费用.svg": "d967574b2a499236e8d6cb9fe37dae44659cee74747880b67ac17e9d3192623d",
+    "预报组合费用.png": "8e8d13601d6c569287e4ef4b7cd57c2cf4caa4a4c2d8bede0e17402a4a8ef03d",
+    "预报组合费用.svg": "0d8959dedc06dbfeb5d5808c5eca20d320db6b968f946d809d39e9fc79ceebd9"
+  },
+  "delivery_command": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "代码\\实验\\q3_revision_a_20260912\\deliver_q3.py"
+  ],
+  "delivery_source_sha256": "40b018ca6dd81c717c323c2704f8f09693dcfa81d61e2c15a9eeaba951ccd055",
+  "review_report": {
+    "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\问题三\\第三问_路线A结果审核报告.md",
+    "sha256": "a403c1a3a57596df78f84bf1b31356b97fefdb588f4a76410bb781fbfeac5116"
+  },
+  "verification_exit_codes": {
+    "check_engine.py": 0,
+    "run_q3.py": 0,
+    "deliver_q3.py": 0,
+    "delivery_report_and_figure_refresh": 0
+  },
+  "visual_check": {
+    "status": "passed",
+    "reviewed": [
+      "预报组合费用.png",
+      "累计费用.png"
+    ],
+    "notes": "Chinese glyphs, labels, units and clipping checked visually; bar legend moved above axes to avoid overlap."
+  }
+}

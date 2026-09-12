@@ -1,0 +1,139 @@
+{
+  "passed": 22,
+  "total": 22,
+  "checks": {
+    "input_contract": {
+      "passed": true,
+      "detail": {
+        "price_min": 0.0076,
+        "protected_files": 17
+      }
+    },
+    "round_trip_settlement": {
+      "passed": true,
+      "detail": 240.0
+    },
+    "joint_price_demand": {
+      "passed": true,
+      "detail": 375.0
+    },
+    "observed_price_response": {
+      "passed": true,
+      "detail": {
+        "low": [
+          0.0,
+          0.0,
+          100.0,
+          0.0,
+          2000.0
+        ],
+        "high": [
+          0.0,
+          99.99999999999999,
+          1.4210854715202004e-14,
+          0.0,
+          1888.888888888889
+        ]
+      }
+    },
+    "bellman_all_knots": {
+      "passed": true,
+      "detail": 9.094947017729282e-13
+    },
+    "continuous_boundary_actions": {
+      "passed": true,
+      "detail": 2.2737367544323206e-13
+    },
+    "constant_price_exact_reduction": {
+      "passed": true,
+      "detail": 0.0
+    },
+    "horizon_guard": {
+      "passed": true,
+      "detail": "invalid plan lengths rejected"
+    },
+    "probabilities": {
+      "passed": true,
+      "detail": {
+        "max_row_error": 2.220446049250313e-16,
+        "fallback": [
+          141,
+          0
+        ]
+      }
+    },
+    "paired_representatives": {
+      "passed": true,
+      "detail": 7146
+    },
+    "compression_duplicate_mass": {
+      "passed": true,
+      "detail": [
+        0.6666666666666666,
+        0.3333333333333333
+      ]
+    },
+    "price_causality": {
+      "passed": true,
+      "detail": "future-date ingress perturbation"
+    },
+    "constant_price_support": {
+      "passed": true,
+      "detail": "no artificial price states or positive-price floor"
+    },
+    "zero_price_allowed": {
+      "passed": true,
+      "detail": 0
+    },
+    "warmup_physics": {
+      "passed": true,
+      "detail": {
+        "end": 10800.0,
+        "balance": 8.242295734817162e-13,
+        "recurrence": 9.094947017729282e-13,
+        "boundary": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "overlap": 0.0,
+        "emergency_charging": 0.0
+      }
+    },
+    "real_day_physics": {
+      "passed": true,
+      "detail": {
+        "balance": 6.252776074688882e-13,
+        "recurrence": 8.979483823168266e-13,
+        "boundary": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "overlap": 0.0,
+        "emergency_charging": 0.0
+      }
+    },
+    "update_without_trading": {
+      "passed": true,
+      "detail": "4 issue models, same fixed plan"
+    },
+    "q42_forecast_family": {
+      "passed": true,
+      "detail": "Q2 and Q3 forecasts remain separate"
+    },
+    "transaction_before_observation": {
+      "passed": true,
+      "detail": "recomputed features + price/net perturbation from slot36"
+    },
+    "unreleased_forecast_causality": {
+      "passed": true,
+      "detail": "12h/18h forecast perturbation does not change earlier execution"
+    },
+    "cross_day_state": {
+      "passed": true,
+      "detail": 2069.7091478432935
+    },
+    "protected_inputs": {
+      "passed": true,
+      "detail": "all recorded hashes unchanged"
+    }
+  },
+  "elapsed": 9.945639799989294
+}

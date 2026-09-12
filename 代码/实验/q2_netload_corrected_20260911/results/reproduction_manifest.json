@@ -1,6 +1,6 @@
 {
-  "revision_sha256": "ff5b95df51083cb729df9950f715e46bd3945acde96a168316a5ff24451a4f15",
-  "base_engine_sha256": "91df6c1f7792e76438cb2e9ee9c0fb0c3610c5f6e1876d18c1a92744e4852ad2",
+  "revision_sha256": "9489dfb3ba668a259dac11e5c41a157deaf4e0ee6321dfc57dcae08266ee433c",
+  "base_engine_sha256": "883bd05fd1edd1bbc4eb617688dabd1e667634e3a3b3476df1b92bcd87c10dcb",
   "forecast_sha256": "2a4b123a2096a7d87e2e41879f6a229fd4eb3681fbc8259e0046a47c3471ba11",
   "inputs": {
     "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
@@ -14,12 +14,12 @@
   "python": "3.13.15",
   "seed": 20260911,
   "kappa": 0.5171831250000001,
-  "seconds": 179.7501139640808,
+  "seconds": 24.336548328399658,
   "status": "completed_pending_user_review",
   "preservation": {
     "checked_files": 4232,
     "changed_or_missing": [],
-    "excluded": "git, skill metadata, old .deps, pycache, experiment folders"
+    "excluded": "git, skill metadata, old .deps, pycache, managed experiment/document folders"
   },
   "command": [
     "C:\\Program Files\\Python313\\python.exe",
@@ -27,16 +27,20 @@
     "utf8",
     "代码\\实验\\q2_netload_corrected_20260911\\run_revision.py",
     "--stage",
-    "all"
+    "export"
   ],
   "outputs": {
-    "results\\cache_signature.json": "1b224518985c3441032abbcd863ad53426ba10fc087701e2c4f968fab64e9004",
+    "results\\cache_signature.json": "416f8fb60bbd131cc87018c3d65754019123289213fc7b27040e0a157cd8bed7",
+    "results\\cache_signature_pre_organization.json": "1b224518985c3441032abbcd863ad53426ba10fc087701e2c4f968fab64e9004",
+    "results\\cache_signature_pre_scope_fix.json": "341b1f73f787d8be8542a777b44fec5c9585f62e5a228488820386fd0bd1ac57",
     "results\\comparison_to_prior.json": "3d0a7c5f757b0919994aa28f78b85dec560350517f11c37799cd30d3163c27d6",
+    "results\\completion_record.json": "8ea57a6a102d9725d902f3b7bc12c78c18c7b475c88a63784a6601882bb6d3a8",
     "results\\controller_selection.json": "8373055c3c7259dd87599656a6cd5436addb7bd9896ca85920d02e97d6f9ba18",
     "results\\daily_metrics.csv": "7cb43aa0d93230b31f6438dca3e4a6c48ece8de30e0548dbef14d54f336c7279",
     "results\\data_audit.json": "8df668b15fbebe4e4a5acc0bd1712f6bf7a07bade154c58820e10014d4bb8a39",
     "results\\delayed_same_plan.npy": "d32736882bb577a395f3d414129574b6d8fb789972631ebd540a7b68f7038685",
     "results\\delayed_same_plan_full_strategy.csv": "e9ad9bc3d89e2ef55f1691687538986b546837f9557dc57ebfbde6bcc3c68b60",
+    "results\\delivery_check.json": "bae7c6e2075755d6ee463dd90aa88beab67d8b0c27eb18c0ecd903f94a722b88",
     "results\\forecasts.npz": "2a4b123a2096a7d87e2e41879f6a229fd4eb3681fbc8259e0046a47c3471ba11",
     "results\\forecast_quantiles.csv": "a08023a48c116fe8904a4dfb4accc16d301ea430e82a86585e4e6710e3601c60",
     "results\\forecast_selection.json": "b6505271b32fd26ff5118403365e8e877d605b184846f33e2c2645ee3d4eff10",
@@ -47,11 +51,11 @@
     "results\\main_full_strategy.csv": "a34b8bee369360a4a593bc7101aa79caad534affabc16802768c2b149d9b2365",
     "results\\median_only.npy": "d7e622b08eca7bfd20ee97fb1182a146c8a4f7067234925faba031cddc9886ec",
     "results\\median_only_full_strategy.csv": "c93a5a6e282d1cdb1bf78f0f7b3cc854d89dcbe0feca26d5b97255a37e4beecc",
-    "results\\original_file_preservation.json": "0a921ca7e79616b43fed0814811a6a104b2d05318d17a7964f941e569b5993e0",
-    "results\\result2_独立实验审核版.xlsx": "b7cb071638d83d7c3e1db64ecbc5904331abdad7a1ee2c9a1db532ce01996d05",
+    "results\\original_file_preservation.json": "27698a8af966ff6de3f1e17a54101df4a92db9c16f20aa9993302e23673c98ba",
+    "results\\result2_独立实验审核版.xlsx": "e58148fb8e376e99934baf7ceb9bd9579ab207efc7630fcd266cc3b4d2cc47f7",
     "results\\smoke.json": "9f89bf10a530e2c17f715f6e5a7512d0ed4e0fb09482ae87d34554518b1ac9dd",
     "results\\summary.json": "86a7f0aad8471caa25c027102faeed8992c1a9552e1f8784aebfd392f204a23d",
     "results\\validation.json": "cff3df90e3139b8ffa197f519712c5fae1027c3cd3eaa0a41de02fba7a8fccdc"
   },
-  "report_sha256": "a8d644ffde30fd52d158db6d2173192c7ca20c6c9c79af2a4b1251ce1c8e84eb"
+  "report_sha256": "26efa0d2a42e6f9fd175b89d1c43d9981405dacc0db56a159c7394a30d14d372"
 }

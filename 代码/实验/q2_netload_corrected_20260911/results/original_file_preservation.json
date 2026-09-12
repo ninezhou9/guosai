@@ -1,5 +1,5 @@
 {
   "checked_files": 4232,
   "changed_or_missing": [],
-  "excluded": "git, skill metadata, old .deps, pycache, experiment folders"
+  "excluded": "git, skill metadata, old .deps, pycache, managed experiment/document folders"
 }

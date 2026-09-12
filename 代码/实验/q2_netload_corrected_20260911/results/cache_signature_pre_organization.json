@@ -1,0 +1,13 @@
+{
+  "revision_sha256": "ff5b95df51083cb729df9950f715e46bd3945acde96a168316a5ff24451a4f15",
+  "base_engine_sha256": "91df6c1f7792e76438cb2e9ee9c0fb0c3610c5f6e1876d18c1a92744e4852ad2",
+  "forecast_sha256": "2a4b123a2096a7d87e2e41879f6a229fd4eb3681fbc8259e0046a47c3471ba11",
+  "inputs": {
+    "基础数据\\附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "基础数据\\附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72"
+  },
+  "samples": 7,
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "lightgbm": "4.7.0"
+}

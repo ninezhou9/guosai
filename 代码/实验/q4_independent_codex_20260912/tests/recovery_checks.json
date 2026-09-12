@@ -1,0 +1,10 @@
+{
+  "passed": 4,
+  "total": 4,
+  "checks": {
+    "nonempty_rejected": true,
+    "rejection_preserves_files": true,
+    "incompatible_signature_rejected": true,
+    "actual_resume_matches_uninterrupted": true
+  }
+}

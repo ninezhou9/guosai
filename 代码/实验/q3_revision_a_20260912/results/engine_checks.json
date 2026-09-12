@@ -1,0 +1,26 @@
+{
+  "scalar_bellman_max_error": 5.4569682106375694e-12,
+  "expected_shortfall_counterexample": 125.0,
+  "successive_transaction_cost": 120.0,
+  "hourly_alignment": true,
+  "current_and_future_actual_no_plan_leak": true,
+  "later_issue_no_early_leak": true,
+  "fixed_plan_equivalence": true,
+  "smoke_day": {
+    "initial_cost": 21459.954562406016,
+    "increase_cost": 0.0,
+    "cancellation_refund": 3683.668455685625,
+    "cancellation_penalty": 1841.8342278428124,
+    "adjustment_net": -1841.8342278428124,
+    "emergency_cost": 2.433638623955403e-11,
+    "total_cost": 19618.12033456323,
+    "initial_kwh": 37817.44438078235,
+    "effective_kwh": 32155.697989873257,
+    "increase_kwh": 0.0,
+    "cancel_kwh": 5661.746390909093,
+    "emergency_kwh": 4.402700426453521e-12,
+    "start_kwh": 10800.0,
+    "end_kwh": 2069.7091478432935
+  },
+  "full_update_day_seconds": 0.2762170999922091
+}

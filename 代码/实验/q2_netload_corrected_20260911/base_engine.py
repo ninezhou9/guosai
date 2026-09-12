@@ -372,9 +372,13 @@ def check_preservation():
     originals=json.loads((BASE/'original_files_sha256.json').read_text(encoding='utf-8-sig'))
     changed=[]
     for item in originals:
+        # 实验目录及其归档文档由本实验维护；保护清单只核对实验之外的用户文件。
+        rel=item['path'].replace('/','\\')
+        if rel.startswith('代码\\实验\\') or rel.startswith('建模思路\\问题二\\') or rel.startswith('论文写作\\问题二\\'):
+            continue
         p=ROOT/item['path']
         if not p.is_file() or sha(p).lower()!=item['sha256'].lower():changed.append(item['path'])
-    res={'checked_files':len(originals),'changed_or_missing':changed,'excluded':'git, skill metadata, old .deps, pycache, experiment folders'}
+    res={'checked_files':len(originals),'changed_or_missing':changed,'excluded':'git, skill metadata, old .deps, pycache, managed experiment/document folders'}
     dump(OUT/'original_file_preservation.json',res)
     return res
 

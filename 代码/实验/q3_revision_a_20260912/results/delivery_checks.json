@@ -1,0 +1,74 @@
+{
+  "independent": {
+    "mask_000": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 0.0,
+      "ledger_rows": 0,
+      "schedule_replay": true
+    },
+    "mask_001": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 1.1362135410308838e-07,
+      "ledger_rows": 12273,
+      "schedule_replay": true
+    },
+    "mask_010": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 5.960464477539063e-08,
+      "ledger_rows": 10992,
+      "schedule_replay": true
+    },
+    "mask_011": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 7.450580596923828e-08,
+      "ledger_rows": 20007,
+      "schedule_replay": true
+    },
+    "mask_100": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 1.6763806343078613e-08,
+      "ledger_rows": 4548,
+      "schedule_replay": true
+    },
+    "mask_101": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 1.3224780559539795e-07,
+      "ledger_rows": 14798,
+      "schedule_replay": true
+    },
+    "mask_110": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 6.51925802230835e-08,
+      "ledger_rows": 12863,
+      "schedule_replay": true
+    },
+    "mask_111": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 6.891787052154541e-08,
+      "ledger_rows": 21603,
+      "schedule_replay": true
+    },
+    "forecast_only": {
+      "physical_max_kwh": 9.094947017729282e-13,
+      "ledger_cost_error_yuan": 0.0,
+      "ledger_rows": 0,
+      "schedule_replay": true
+    }
+  },
+  "delivery": {
+    "xlsx_readback": true,
+    "main_csv_readback": true,
+    "rows": 48096,
+    "merged_emergency_events": 367,
+    "template_original_unchanged": true
+  },
+  "sensitivity_days": 4,
+  "visual_check": {
+    "status": "passed",
+    "reviewed": [
+      "预报组合费用.png",
+      "累计费用.png"
+    ],
+    "notes": "Chinese glyphs, labels, units and clipping checked visually; bar legend moved above axes to avoid overlap."
+  }
+}

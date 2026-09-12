@@ -16,7 +16,7 @@ def main():
     manifest=r.read(out/'reproduction_manifest.json')
     mismatches=[name for name,h in manifest['outputs'].items() if b.sha(r.BASE/name)!=h]
     assert not mismatches,mismatches
-    assert b.sha(r.BASE/'修正结果报告.md')==manifest['report_sha256']
+    assert b.sha(r.REPORT_PATH)==manifest['report_sha256']
     wb=b.openpyxl.load_workbook(out/'result2_独立实验审核版.xlsx',read_only=True,data_only=True)
     ws=wb['全年主方案'];assert ws.max_row==48097
     sums=np.zeros(3)

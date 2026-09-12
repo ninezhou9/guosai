@@ -1,0 +1,657 @@
+{
+  "passed": 119,
+  "total": 119,
+  "checks": {
+    "warmup_chain": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A42_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A42_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A42_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A42_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A42_transaction_replay": {
+      "passed": true,
+      "detail": 0
+    },
+    "A42_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14505015.497849217,
+        "max_error": 2.9103830456733704e-11
+      }
+    },
+    "A42_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A42_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A42_frozen": {
+      "passed": true,
+      "detail": "ordinary plan fixed"
+    },
+    "B42_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "B42_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "B42_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "B42_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "B42_transaction_replay": {
+      "passed": true,
+      "detail": 0
+    },
+    "B42_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14508504.56643146,
+        "max_error": 2.9103830456733704e-11
+      }
+    },
+    "B42_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "B42_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "B42_frozen": {
+      "passed": true,
+      "detail": "ordinary plan fixed"
+    },
+    "B43_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "B43_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "B43_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "B43_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "B43_transaction_replay": {
+      "passed": true,
+      "detail": 21994
+    },
+    "B43_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14286617.342978965,
+        "max_error": 4.3655745685100555e-11
+      }
+    },
+    "B43_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "B43_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_000_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_000_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_000_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_000_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_000_transaction_replay": {
+      "passed": true,
+      "detail": 0
+    },
+    "A43_000_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14587125.31544182,
+        "max_error": 1.862645149230957e-09
+      }
+    },
+    "A43_000_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_000_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_000_frozen": {
+      "passed": true,
+      "detail": "ordinary plan fixed"
+    },
+    "A43_001_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_001_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_001_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_001_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_001_transaction_replay": {
+      "passed": true,
+      "detail": 12056
+    },
+    "A43_001_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14480861.170085944,
+        "max_error": 2.9103830456733704e-11
+      }
+    },
+    "A43_001_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_001_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_010_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_010_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_010_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_010_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_010_transaction_replay": {
+      "passed": true,
+      "detail": 10927
+    },
+    "A43_010_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14294967.91956047,
+        "max_error": 4.3655745685100555e-11
+      }
+    },
+    "A43_010_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_010_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_011_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_011_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_011_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_011_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_011_transaction_replay": {
+      "passed": true,
+      "detail": 19947
+    },
+    "A43_011_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14337867.571259389,
+        "max_error": 1.862645149230957e-09
+      }
+    },
+    "A43_011_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_011_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_100_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_100_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_100_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_100_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_100_transaction_replay": {
+      "passed": true,
+      "detail": 4455
+    },
+    "A43_100_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14499480.27291876,
+        "max_error": 1.862645149230957e-09
+      }
+    },
+    "A43_100_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_100_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_101_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_101_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_101_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_101_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_101_transaction_replay": {
+      "passed": true,
+      "detail": 14768
+    },
+    "A43_101_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14380204.943734255,
+        "max_error": 4.3655745685100555e-11
+      }
+    },
+    "A43_101_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_101_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_110_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_110_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_110_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_110_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_110_transaction_replay": {
+      "passed": true,
+      "detail": 12703
+    },
+    "A43_110_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14238185.74356717,
+        "max_error": 4.3655745685100555e-11
+      }
+    },
+    "A43_110_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_110_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_111_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_111_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_111_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_111_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_111_transaction_replay": {
+      "passed": true,
+      "detail": 21592
+    },
+    "A43_111_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14275233.097526498,
+        "max_error": 3.725290298461914e-09
+      }
+    },
+    "A43_111_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_111_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_update_only_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_update_only_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_update_only_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_update_only_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_update_only_transaction_replay": {
+      "passed": true,
+      "detail": 0
+    },
+    "A43_update_only_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14573509.706195958,
+        "max_error": 2.9103830456733704e-11
+      }
+    },
+    "A43_update_only_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_update_only_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "A43_update_only_frozen": {
+      "passed": true,
+      "detail": "ordinary plan fixed"
+    },
+    "A43_adjust_only_shape_data": {
+      "passed": true,
+      "detail": [
+        334,
+        144,
+        11
+      ]
+    },
+    "A43_adjust_only_physical": {
+      "passed": true,
+      "detail": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13
+      }
+    },
+    "A43_adjust_only_limits": {
+      "passed": true,
+      "detail": {
+        "boundary": 1.1368683772161603e-13,
+        "overlap": 0.0
+      }
+    },
+    "A43_adjust_only_continuity": {
+      "passed": true,
+      "detail": 10800.0
+    },
+    "A43_adjust_only_transaction_replay": {
+      "passed": true,
+      "detail": 4436
+    },
+    "A43_adjust_only_accounting": {
+      "passed": true,
+      "detail": {
+        "total": 14399066.577715214,
+        "max_error": 2.9103830456733704e-11
+      }
+    },
+    "A43_adjust_only_bill_components": {
+      "passed": true,
+      "detail": 2.9103830456733704e-11
+    },
+    "A43_adjust_only_snapshots": {
+      "passed": true,
+      "detail": "four snapshots per day replayed"
+    },
+    "lp_status": {
+      "passed": true,
+      "detail": 33952
+    },
+    "A42_excel_values": {
+      "passed": true,
+      "detail": {
+        "max_error": 1.5570549294352531e-09,
+        "emergency_kwh": 92063.50146440738
+      }
+    },
+    "A42_excel_styles": {
+      "passed": true,
+      "detail": 0
+    },
+    "A42_csv_keys": {
+      "passed": true,
+      "detail": 48096
+    },
+    "A43_111_excel_values": {
+      "passed": true,
+      "detail": {
+        "max_error": 1.7971615307033062e-09,
+        "emergency_kwh": 53999.142587332775
+      }
+    },
+    "A43_111_excel_styles": {
+      "passed": true,
+      "detail": 0
+    },
+    "A43_111_csv_keys": {
+      "passed": true,
+      "detail": 48096
+    },
+    "protected_input_hashes": {
+      "passed": true,
+      "detail": []
+    },
+    "solver_source_hashes": {
+      "passed": true,
+      "detail": []
+    },
+    "checkpoint_completeness": {
+      "passed": true,
+      "detail": []
+    }
+  }
+}
