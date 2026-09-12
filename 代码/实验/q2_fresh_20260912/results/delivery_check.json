@@ -1,0 +1,27 @@
+{
+  "report_sha256": "6c7530950fde2d9b70076988b97d5161b238295f7ad40b8fef30fcf05e567a1a",
+  "all_outputs_sha256": {
+    "controller_selection.json": "cbb18a4d20b996ab0a90a124e13057ffed8215ff61054c674dbc4dfd09f35609",
+    "daily_summary.csv": "fe717d1fc45967eeb38b0f21a6c0903440a1089bcde3cbc3cd1c555e97c16279",
+    "delivery_check.json": "ba8cf34f8781a423d94f4f9936a199959503edf4660d5b68ec7330f27091afdf",
+    "forecast_selection.json": "18caa375f6000d6516c5d93a60e0f8e98c6481ddde48168a70621842c0e8dffd",
+    "fresh_forecasts.npz": "a973066f5a8f7e0896e2b8111bc13e5a8d1edc9d75abff036030d0af09abd918",
+    "independent_check.json": "de4f5d216162a4e92d8224a643df635da71cff3221bf94f74a567186d6c5509e",
+    "independent_greedy.npy": "cb59d3392b9af3ffaf1eafa6a5d41d53f6818c59a5ef73910a04d842bacd85f2",
+    "independent_greedy_intervals.csv": "a5613d013a93ade8cae686fb28196ac7567aaa18da77a0929ee06d05d24a211a",
+    "january_warmup.npy": "a393d117e3934023795a98a9cf482697f86dfb71aad77693285f921f67c430eb",
+    "main.npy": "445d7d4f1558d1b7d44849f754611c701b4a71b843db176355fc6b2fd932f8b7",
+    "main_intervals.csv": "22f1582f2a8024a54a21e9e739477ce0b16f5f782f484708d2aa9c9911fed8d8",
+    "manifest.json": "d92be9fc3f66ca1008a2b42e9bee2f83a62926b4daebfb6e9754fab8397556f9",
+    "result2.xlsx": "6de1de3de256f25e41aed12a43643be24e7314607e4e9342f3f32a02440e7b4b",
+    "same_plan_greedy.npy": "45a319cb21b225e16ccaedb62693e10a7e3b4b51111c84d93a6cda9f9512223d",
+    "same_plan_greedy_intervals.csv": "2d7ce8f77778e99b9053a07f528b312f286a9e2dae0ce3506232b87c43edcd23",
+    "summary.json": "712767035d643a021cfe46f6a0edb89973e5f3ddc58f61b4b00d1f5e0bd0502d",
+    "training_trace.csv": "cb553a19561986adb5b9e59dfcdcc426fc1a14e2ada5bb8c0561253168fea310",
+    "累计费用.png": "e7aaffbfda866749340ceddf6dd21819281515ee302b75e2bc57aea0e4cc83f9",
+    "累计费用.svg": "3fe6753eb98de5cd3d1e184c77e69713e8b2a656af2233c9304c2c766830cc34"
+  },
+  "status": "checked",
+  "fit_count": 2457,
+  "model_run_exit_code": 0
+}

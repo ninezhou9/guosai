@@ -1,0 +1,197 @@
+{
+  "created": "2026-09-12T09:37:25.320851",
+  "status": "completed_checked_pending_review",
+  "raw_inputs": {
+    "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72"
+  },
+  "old_prediction_reads": 0,
+  "old_result_reads": 0,
+  "models_trained": 2457,
+  "elapsed_seconds": 690.8245956000028,
+  "summary": {
+    "main": {
+      "normal_cost": 13286808.063763022,
+      "emergency_cost": 487693.2804441154,
+      "total_cost": 13774501.34420714,
+      "planned_kWh": 21719800.099253003,
+      "emergency_kWh": 91372.66484700883,
+      "spill_kWh": 2677671.4052712508,
+      "charge_kWh": 6330613.738485386,
+      "discharge_kWh": 5136301.874623291,
+      "emergency_days": 135,
+      "emergency_intervals": 1095,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 105489.05900379925,
+      "top_5pct_daily_mean": 69060.74879329845
+    },
+    "same_plan_greedy": {
+      "normal_cost": 13286808.063763022,
+      "emergency_cost": 545750.0193666874,
+      "total_cost": 13832558.083129711,
+      "planned_kWh": 21719800.099253003,
+      "emergency_kWh": 91297.13870550264,
+      "spill_kWh": 2677578.163121246,
+      "charge_kWh": 6330706.980635391,
+      "discharge_kWh": 5136377.400764796,
+      "emergency_days": 134,
+      "emergency_intervals": 710,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 111809.96216014205,
+      "top_5pct_daily_mean": 70945.10129146738
+    },
+    "independent_greedy": {
+      "normal_cost": 13286848.260453891,
+      "emergency_cost": 545750.0193666874,
+      "total_cost": 13832598.279820576,
+      "planned_kWh": 21719893.341403008,
+      "emergency_kWh": 91297.13870550264,
+      "spill_kWh": 2677671.4052712508,
+      "charge_kWh": 6330706.980635391,
+      "discharge_kWh": 5136377.400764796,
+      "emergency_days": 134,
+      "emergency_intervals": 710,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 111809.96216014205,
+      "top_5pct_daily_mean": 70945.39387280724
+    }
+  },
+  "checks": {
+    "physical": {
+      "main": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 1.1368683772161603e-13,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      },
+      "same_plan_greedy": {
+        "balance": 2.2737367544323206e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      },
+      "independent_greedy": {
+        "balance": 2.2737367544323206e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      }
+    },
+    "dayahead_causal_features_and_probabilities": true,
+    "future_observation_perturbation": true,
+    "within_class_shortfall_counterexample": 125.0
+  },
+  "forecast_metrics": {
+    "MAE_kW": 247.86429957372232,
+    "RMSE_kW": 371.0373105947737,
+    "q80_coverage": 0.7978418163672655
+  },
+  "forecast_selection": {
+    "validation": "2025-01-15..2025-01-21",
+    "frozen_at": "2025-01-22 00:00",
+    "direct_MAE_kW": 228.58099415128603,
+    "separate_MAE_kW": 188.56528438947598,
+    "family": "separate_center"
+  },
+  "controller_selection": {
+    "candidates": [
+      {
+        "kappa": 0.0,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      },
+      {
+        "kappa": 0.17239437500000002,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      },
+      {
+        "kappa": 0.34478875000000003,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      },
+      {
+        "kappa": 0.5171831250000001,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      },
+      {
+        "kappa": 0.6895775000000001,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      },
+      {
+        "kappa": 0.861971875,
+        "bill": 508328.52783991146,
+        "inventory_adjusted": 511304.843495684,
+        "start": 6542.324539444455,
+        "end": 2226.1807328780533
+      }
+    ],
+    "selected": {
+      "kappa": 0.0,
+      "bill": 508328.52783991146,
+      "inventory_adjusted": 511304.843495684,
+      "start": 6542.324539444455,
+      "end": 2226.1807328780533
+    },
+    "reference_inventory_price": 0.6895775000000001,
+    "validation": "2025-01-22..2025-01-31",
+    "frozen_at": "2025-02-01 00:00",
+    "model": "fixed q80, day-ahead LP terminal coefficient zero, own continuous SOC"
+  },
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "lightgbm": "4.7.0",
+  "openpyxl": "3.1.5",
+  "source_hashes": {
+    "fresh_engine.py": "a36f769b2ee936c62281adc0854b895dc474d7d1ac3f7954d4ec1794b02de47c",
+    "run_fresh.py": "f391793432111a7aec6e8b327a061f1913348484e06d9417b9cdfb2d58bc36ea"
+  },
+  "seed": 20260911,
+  "command": [
+    "E:\\ANACONDA\\python.exe",
+    "代码\\实验\\q2_fresh_20260912\\run_fresh.py"
+  ],
+  "output_hashes": {
+    "controller_selection.json": "cbb18a4d20b996ab0a90a124e13057ffed8215ff61054c674dbc4dfd09f35609",
+    "daily_summary.csv": "fe717d1fc45967eeb38b0f21a6c0903440a1089bcde3cbc3cd1c555e97c16279",
+    "forecast_selection.json": "18caa375f6000d6516c5d93a60e0f8e98c6481ddde48168a70621842c0e8dffd",
+    "fresh_forecasts.npz": "a973066f5a8f7e0896e2b8111bc13e5a8d1edc9d75abff036030d0af09abd918",
+    "independent_greedy.npy": "cb59d3392b9af3ffaf1eafa6a5d41d53f6818c59a5ef73910a04d842bacd85f2",
+    "independent_greedy_intervals.csv": "a5613d013a93ade8cae686fb28196ac7567aaa18da77a0929ee06d05d24a211a",
+    "january_warmup.npy": "a393d117e3934023795a98a9cf482697f86dfb71aad77693285f921f67c430eb",
+    "main.npy": "445d7d4f1558d1b7d44849f754611c701b4a71b843db176355fc6b2fd932f8b7",
+    "main_intervals.csv": "22f1582f2a8024a54a21e9e739477ce0b16f5f782f484708d2aa9c9911fed8d8",
+    "result2.xlsx": "6de1de3de256f25e41aed12a43643be24e7314607e4e9342f3f32a02440e7b4b",
+    "same_plan_greedy.npy": "45a319cb21b225e16ccaedb62693e10a7e3b4b51111c84d93a6cda9f9512223d",
+    "same_plan_greedy_intervals.csv": "2d7ce8f77778e99b9053a07f528b312f286a9e2dae0ce3506232b87c43edcd23",
+    "training_trace.csv": "cb553a19561986adb5b9e59dfcdcc426fc1a14e2ada5bb8c0561253168fea310"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "summary": {
+    "main": {
+      "normal_cost": 13286808.063763022,
+      "emergency_cost": 487693.2804441154,
+      "total_cost": 13774501.34420714,
+      "planned_kWh": 21719800.099253003,
+      "emergency_kWh": 91372.66484700883,
+      "spill_kWh": 2677671.4052712508,
+      "charge_kWh": 6330613.738485386,
+      "discharge_kWh": 5136301.874623291,
+      "emergency_days": 135,
+      "emergency_intervals": 1095,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 105489.05900379925,
+      "top_5pct_daily_mean": 69060.74879329845
+    },
+    "same_plan_greedy": {
+      "normal_cost": 13286808.063763022,
+      "emergency_cost": 545750.0193666874,
+      "total_cost": 13832558.083129711,
+      "planned_kWh": 21719800.099253003,
+      "emergency_kWh": 91297.13870550264,
+      "spill_kWh": 2677578.163121246,
+      "charge_kWh": 6330706.980635391,
+      "discharge_kWh": 5136377.400764796,
+      "emergency_days": 134,
+      "emergency_intervals": 710,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 111809.96216014205,
+      "top_5pct_daily_mean": 70945.10129146738
+    },
+    "independent_greedy": {
+      "normal_cost": 13286848.260453891,
+      "emergency_cost": 545750.0193666874,
+      "total_cost": 13832598.279820576,
+      "planned_kWh": 21719893.341403008,
+      "emergency_kWh": 91297.13870550264,
+      "spill_kWh": 2677671.4052712508,
+      "charge_kWh": 6330706.980635391,
+      "discharge_kWh": 5136377.400764796,
+      "emergency_days": 134,
+      "emergency_intervals": 710,
+      "E_start": 10800.0,
+      "E_end": 1350.2817220781249,
+      "max_daily_cost": 111809.96216014205,
+      "top_5pct_daily_mean": 70945.39387280724
+    }
+  },
+  "forecast_metrics": {
+    "MAE_kW": 247.86429957372232,
+    "RMSE_kW": 371.0373105947737,
+    "q80_coverage": 0.7978418163672655
+  },
+  "kappa": 0.0,
+  "checks": {
+    "physical": {
+      "main": {
+        "balance": 9.094947017729282e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 1.1368683772161603e-13,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      },
+      "same_plan_greedy": {
+        "balance": 2.2737367544323206e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      },
+      "independent_greedy": {
+        "balance": 2.2737367544323206e-13,
+        "state": 9.094947017729282e-13,
+        "continuity": 0.0,
+        "simultaneous": 0.0,
+        "soc": 0.0,
+        "power": 0.0,
+        "nonnegative": 0.0,
+        "emergency_charging": 0.0
+      }
+    },
+    "dayahead_causal_features_and_probabilities": true,
+    "future_observation_perturbation": true,
+    "within_class_shortfall_counterexample": 125.0
+  }
+}

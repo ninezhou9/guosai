@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "causal_checks": [
+    {
+      "day_index": 31,
+      "future_load_changed_without_pv_cancellation": true,
+      "past_only_features_and_probabilities": true
+    },
+    {
+      "day_index": 90,
+      "future_load_changed_without_pv_cancellation": true,
+      "past_only_features_and_probabilities": true
+    },
+    {
+      "day_index": 180,
+      "future_load_changed_without_pv_cancellation": true,
+      "past_only_features_and_probabilities": true
+    },
+    {
+      "day_index": 270,
+      "future_load_changed_without_pv_cancellation": true,
+      "past_only_features_and_probabilities": true
+    }
+  ],
+  "csv_recomputed_bill": 13774501.34420714,
+  "training_days": 351,
+  "models_fit": 2457,
+  "training_cutoff_before_forecast_date": true,
+  "original_run_output_hashes_match": true
+}

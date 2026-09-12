@@ -1,0 +1,7 @@
+{
+  "validation": "2025-01-15..2025-01-21",
+  "frozen_at": "2025-01-22 00:00",
+  "direct_MAE_kW": 228.58099415128603,
+  "separate_MAE_kW": 188.56528438947598,
+  "family": "separate_center"
+}
