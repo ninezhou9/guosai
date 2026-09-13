@@ -68,14 +68,14 @@ def main():
         original.close();saved.close()
     for name,expected in payload['source_hashes'].items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==expected,('Source changed',name)
-    report=dict(status='partial_pending_external_pv_forecast',
+    report=dict(status='complete_with_authorized_boundary_assumptions' if all(s['ready'] for s in payload['workbooks']) else 'partial_pending_boundary_resolution',
                 verified=checks,original_sources_unchanged=True,
                 waiting=[x['file'] for x in payload['workbooks'] if not x['ready']],
                 missing_inputs=payload['missing_inputs'],
-                q1_status='Not complete. Previously copied same-day first slot is not a computed next-day result.',
+                q1_status='Fresh next-day solve with explicitly authorized repeating PV forecast.' if payload['workbooks'][0]['ready'] else 'Next-day calculation not ready.',
                 time_mapping='Input 00:10 ends 00:00-00:10. Original template preserved; values matched by actual delivery date/time.',
                 annual_table_totals='Sum of the displayed 00:10 through next-day 00:10 window; storage and emergency tables retain their stated natural-day intervals.',
-                boundary_prediction='Q2 and Q4-2 extra slot predicted by unchanged original model functions; Q4-2 year-end cost uses forecast price, not unavailable actual 2026 price.',
+                boundary_prediction='Q1 repeats the supplied PV forecast and solves the next daily cycle. Q3 and Q4-3 use the authorized extension of the last available PV forecast. Q2 and Q4-2 use the original prediction methods. Original optimization sources are unchanged. Year-end Q4 costs use forecast prices.',
                 issue_time_caveat='Next-day first slot is from the next-day model plan; it is not represented as a plan known at the previous midnight.',
                 original_source_hashes=payload['source_hashes'])
     (WORK/'verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')

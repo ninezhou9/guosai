@@ -10,7 +10,10 @@ await fs.mkdir(out, { recursive: true });
 await fs.mkdir(preview, { recursive: true });
 const mode = process.argv[2] || 'preview';
 const payload = mode === 'fill' ? JSON.parse(await fs.readFile(path.join(work, 'payload.json'), 'utf8')) : null;
-const names = payload ? payload.workbooks.filter(s=>s.ready).map(s=>s.file) : ['result1.xlsx','result2.xlsx'];
+const requested = process.argv.slice(3);
+const readyNames = payload ? payload.workbooks.filter(s=>s.ready).map(s=>s.file) : ['result1.xlsx','result2.xlsx'];
+if (requested.some(name=>!readyNames.includes(name))) throw new Error('Requested workbook is not ready');
+const names = requested.length ? requested : readyNames;
 
 async function render(wb, name, sheet, range, suffix) {
   const blob = await wb.render({sheetName:sheet,range,scale:1.6,format:'png'});

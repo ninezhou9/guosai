@@ -50,13 +50,14 @@ def prepare():
     for k in range(6):
         block=q1[k*24:(k+1)*24]
         q1store.append([sum(float(r['充电_kWh']) for r in block),sum(float(r['放电_kWh']) for r in block)])
-    # E_0 = E_144 constrains stored energy only. It does not supply tomorrow's
-    # PV forecast or authorize copying today's first purchase into tomorrow.
-    # Keep the unavailable value in this intermediate payload only; the XLSX
-    # exporter skips this workbook until an actual next-day plan is available.
-    specs=[dict(file='result1.xlsx',ready=False,kind='single',
-                missing_input='Q1 next-day PV forecast and the resulting next-day model plan',
-                plans={'计划购电量':[[float(v)] for v in g1[1:]]+[[None]]},
+    # Use the freshly solved next-day plan under the authorized PV extension.
+    # Never silently wrap the saved first slot into the next-day position.
+    next_q1=boundary.get('q1',{})
+    q1_ready=next_q1.get('ready',False)
+    q1_tail=next_q1['first_slot_kwh'] if q1_ready else None
+    specs=[dict(file='result1.xlsx',ready=q1_ready,kind='single',
+                missing_input=None if q1_ready else 'Q1 next-day model plan under an authorized forecast extension',
+                plans={'计划购电量':[[float(v)] for v in g1[1:]]+[[q1_tail]]},
                 storage=q1store,start=float(q1[0]['期初储电_kWh']),end=float(q1[-1]['期末储电_kWh']))]
     p=np.asarray(boundary['q2_price'])
     main2=np.load(Q2/'main.npy')
