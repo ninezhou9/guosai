@@ -1,0 +1,8 @@
+{
+  "limit_bytes": 20000000,
+  "support_zip_bytes": 12980858,
+  "appendix_pdf_bytes": 118083,
+  "appendix_pdf_pages": 4,
+  "remaining_full_paper_pdf_bytes": 7019142,
+  "remaining_body_without_appendix_bytes": 6901059
+}

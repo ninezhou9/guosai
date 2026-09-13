@@ -1,24 +1,30 @@
-# 代码实现 (Code & Implementation)
+# 模型代码与运行入口
 
-## 📌 目录定位
-本目录存放竞赛全流程的源码，涵盖数据处理、模型求解、算法实现及结果可视化。
+| 问题 | 当前主版本 | 入口 |
+| --- | --- | --- |
+| 第一问 | `q1_solution.py` | `q1_solution.py` |
+| 第二问 | `实验/q2_fresh_20260912/` | `run_fresh.py`，说明见该目录README |
+| 第三问 | `实验/q3_revision_a_20260912/` | `run_q3.py`，说明见该目录README |
+| 第四问 | `实验/q4_independent_codex_20260912/` | `run.py`，说明见该目录README |
+| 跨日补算、模板回填 | `结果导出/` | 下述顺序 |
+| 附录与支撑材料同步 | `交付整理/sync_materials.py` | `build`、`sync`、`pack` |
 
-## 🛠️ 环境配置
-- 推荐编程语言：Python 3.10+ / Matlab R2022b+
-- Python 核心依赖：`numpy`, `pandas`, `scipy`, `scikit-learn`, `matplotlib`, `seaborn`, `gurobipy` / `pulp`, `optuna` 等。
+支撑材料按最终版本清单打包，上表各问目录为项目内正式计算入口；支撑包只保留四问模型程序、依赖清单、五份答案和AI使用说明。支撑包中的运行入口已适配简化目录及删除独立核验程序后的依赖，原模型求解函数、参数和方法不变。时间对齐、绘图和各问详细记录仍保留在项目工作目录。打包清单位于 `交付整理/sync_materials.py` 的 `SOURCE_GROUPS`，同步与打包均核对该清单。
 
-## 📂 建议代码组织规范
-```text
-代码/
-├── q1_solution.py       # 问题一求解脚本
-├── q2_solution.py       # 问题二求解脚本
-├── q3_solution.py       # 问题三求解脚本
-├── utils/               # 公共工具函数（数据读取、指标计算等）
-├── visualization/       # 图表绘制与美化脚本
-└── requirements.txt     # Python 依赖清单
-```
+四问原始优化与预测方法保留。`结果导出/boundary_rules.py` 集中记录新增的时间对齐和边界规则：第一问按光伏日周期延拓后调用原求解器；第三问与4-3衔接最后一次有效预报，并以此前7天同一时刻的预报均值延拓年末缺失时段。
 
-## ⚠️ 编写规范
-1. **代码注释**：关键计算步骤、参数设置、损失函数需包含清晰注释。
-2. **随机种子**：涉及随机优化、机器学习训练时务必固定随机种子（如 `random_state=42`），确保结果 100% 可复现。
-3. **输出图表**：统一输出高清矢量图（.pdf / .svg）或高分辨率点阵图（.png, 300 DPI+）。
+在已有完整模型结果和缓存的基础上，依次执行：
+
+1. `结果导出/boundary_prediction.py forecast`
+2. `结果导出/boundary_prediction.py q4`
+3. `结果导出/boundary_prediction.py q1`
+4. `结果导出/boundary_prediction.py q3`
+5. `结果导出/prepare_templates.py`
+6. `结果导出/refill_templates.mjs fill`
+7. `结果导出/verify_templates.py`
+8. `结果导出/publish_results.py`：发布五份已核验答案。
+9. `交付整理/sync_materials.py sync`、`pack`：同步最终程序和答案并重建支撑包。
+
+附录内容需要更新时，先运行 `sync_materials.py build`，核对文档后运行 `sync_materials.py sync --include-documents`，再运行 `sync_materials.py pack`。不带 `--include-documents` 的同步仅更新源码、结果和记录。本次按用户确认省略Word分页检查，保留内容、源码与结构核对，实际分页仍标记为未验证；本次确认不自动适用于后续新版本。
+
+计算依赖NumPy、SciPy、LightGBM、openpyxl、Matplotlib；Word编辑及独立PDF排版依赖python-docx、ReportLab、pypdf。Excel回填使用Node和 `@oai/artifact-tool`。本机第二问旧清单中的E盘Anaconda路径已失效，当前补算使用Python313及Codex内置运行时。源码打包不包含运行时、`node_modules`、`.deps`、`__pycache__` 或大型模型缓存。完整重现需原始附件及各问计算生成的缓存，不能只凭支撑包宣称全年重跑通过。

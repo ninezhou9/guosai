@@ -1,0 +1,53 @@
+{
+  "status": "delivered",
+  "updated_at": "2026-09-13T18:32:14+08:00",
+  "original_model_code_hashes_verified": {
+    "代码\\q1_solution.py": "e76c55cec573da6edf5f03cd0c6afb8d56f8d457025706c7c1ab7cd369425d8f",
+    "代码\\实验\\q2_fresh_20260912\\fresh_engine.py": "4d618b19f644af7d05b49c185ba1624b046b96e9464ed8ce215231c01af224ba",
+    "代码\\实验\\q2_fresh_20260912\\run_fresh.py": "3b29db33723e76500d4db3d27c605c2f4ecb1b647e10cf483b8cc23aac3e82ea",
+    "代码\\实验\\q3_revision_a_20260912\\q3_engine.py": "354e43d70ea0f526dd5bcbf4800d672b4d5659098765d34dcc60028824ac31fd",
+    "代码\\实验\\q3_revision_a_20260912\\deliver_q3.py": "40b018ca6dd81c717c323c2704f8f09693dcfa81d61e2c15a9eeaba951ccd055",
+    "代码\\实验\\q4_independent_codex_20260912\\model.py": "400f2600a277e83b9d8a53ae1ea6920ae27ec483c6610f883777c47242cf56c3",
+    "代码\\实验\\q4_independent_codex_20260912\\deliver.py": "4e5491a7ef8b198a428965fbd555d97373191ede8e16cf814c49646a059d9e09"
+  },
+  "word_content_source_structure_verified": true,
+  "word_pagination_verified": false,
+  "word_pagination_check_omitted_by_user": true,
+  "user_instruction": "省略检查，继续交付",
+  "current_zip_updated_for_this_materials_sync": true,
+  "archive_files": 81,
+  "code_files": 35,
+  "source_readme_and_requirements_files": 1,
+  "artifacts": {
+    "论文附录.docx": {
+      "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\附录与支撑材料_20260913\\论文附录.docx",
+      "sha256": "1fe1101af7ea0f8524418c57ed8140e2d0f2295d37fb00d8b8bb79fb93bcd542",
+      "bytes": 17765
+    },
+    "论文附录.pdf": {
+      "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\附录与支撑材料_20260913\\论文附录.pdf",
+      "sha256": "b75d7915547937c7c484a4bf1e1165379de8ea3819c829887c7c1af6dac75bdc",
+      "bytes": 118083
+    },
+    "论文附录.md": {
+      "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\附录与支撑材料_20260913\\论文附录.md",
+      "sha256": "f38f1714d7639007d2f9324caa24975292a957d7704d2cbf9b63e40ff3433b5e",
+      "bytes": 9082
+    },
+    "支撑材料/AI使用说明.docx": {
+      "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\附录与支撑材料_20260913\\支撑材料\\AI使用说明.docx",
+      "sha256": "6e45e042551c7cfb7367b5ad9e06e48a2d0d7793bc6d442c902ded525fb3e786",
+      "bytes": 14090
+    },
+    "支撑材料.zip": {
+      "path": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\附录与支撑材料_20260913\\支撑材料.zip",
+      "sha256": "f59e7504c5ef4b60c78ef0ea1eed0ecd51da2b833b2f4452819c1db0ce29d55b",
+      "bytes": 12980858
+    }
+  },
+  "pdf_is_independent_layout_not_word_export": true,
+  "permanent_deletions": 0,
+  "backup": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\历史版本\\支撑材料简化前_20260913_182706",
+  "only_final_versions": true,
+  "max_internal_directory_depth": 2
+}

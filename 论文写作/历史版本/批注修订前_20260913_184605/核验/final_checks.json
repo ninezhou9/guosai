@@ -1,0 +1,17 @@
+{
+  "status": "delivered_final_versions_simple_layout",
+  "core_source_groups_verified": 5,
+  "python_files_syntax_verified": 20,
+  "docx_zip_structure_verified": 2,
+  "pdf_pages": {
+    "论文附录.pdf": 4
+  },
+  "independent_appendix_pdf_all_pages_inspected": true,
+  "ai_document_text_unchanged": true,
+  "word_pagination_verified": false,
+  "word_pagination_check_omitted_by_user": true,
+  "archive_files_verified": 81,
+  "result_workbooks_hash_verified": 5,
+  "max_internal_directory_depth": 2,
+  "full_year_models_rerun_this_materials_update": false
+}

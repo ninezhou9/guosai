@@ -1,0 +1,28 @@
+{
+  "status": "folder_and_sources_synced_word_delivery_pending",
+  "original_model_code_hashes_verified": {
+    "代码\\q1_solution.py": "e76c55cec573da6edf5f03cd0c6afb8d56f8d457025706c7c1ab7cd369425d8f",
+    "代码\\实验\\q2_fresh_20260912\\fresh_engine.py": "4d618b19f644af7d05b49c185ba1624b046b96e9464ed8ce215231c01af224ba",
+    "代码\\实验\\q2_fresh_20260912\\run_fresh.py": "3b29db33723e76500d4db3d27c605c2f4ecb1b647e10cf483b8cc23aac3e82ea",
+    "代码\\实验\\q3_revision_a_20260912\\q3_engine.py": "354e43d70ea0f526dd5bcbf4800d672b4d5659098765d34dcc60028824ac31fd",
+    "代码\\实验\\q3_revision_a_20260912\\deliver_q3.py": "40b018ca6dd81c717c323c2704f8f09693dcfa81d61e2c15a9eeaba951ccd055",
+    "代码\\实验\\q4_independent_codex_20260912\\model.py": "400f2600a277e83b9d8a53ae1ea6920ae27ec483c6610f883777c47242cf56c3",
+    "代码\\实验\\q4_independent_codex_20260912\\deliver.py": "4e5491a7ef8b198a428965fbd555d97373191ede8e16cf814c49646a059d9e09"
+  },
+  "word_content_ready": true,
+  "word_pagination_verified": false,
+  "current_zip_updated_for_this_materials_sync": false,
+  "candidate_zip": "C:\\Users\\sss\\Desktop\\国赛\\tmp\\materials_sync_20260913\\支撑材料_待Word分页核验.zip",
+  "prepared_word_files": [
+    "C:\\Users\\sss\\Desktop\\国赛\\tmp\\materials_sync_20260913\\论文附录.docx",
+    "C:\\Users\\sss\\Desktop\\国赛\\tmp\\materials_sync_20260913\\AI使用说明.docx"
+  ],
+  "pdf_is_independent_layout_not_word_export": true,
+  "user_has_not_approved_omitting_word_pagination_review": true,
+  "diagnostics": {
+    "libreoffice": "soffice.exe unavailable",
+    "word": "COM activation did not return; GetActiveObject returned 0x800401E3, including outside the sandbox",
+    "wps": "registered LocalServer32 refers to missing E:/WPS/WPS Office/.../wps.exe; actual executable under E:/WPS Office/.../wps.exe"
+  },
+  "permanent_deletions": 0
+}

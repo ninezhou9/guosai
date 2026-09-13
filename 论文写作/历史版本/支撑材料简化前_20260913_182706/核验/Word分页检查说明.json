@@ -1,0 +1,12 @@
+{
+  "scope": "本次附录与AI使用说明的Word实际分页检查",
+  "user_instruction": "省略检查，继续交付",
+  "recorded_at": "2026-09-13T18:15:42+08:00",
+  "word_pagination_checked": false,
+  "content_source_structure_checks_passed": true,
+  "applies_to_document_sha256": {
+    "论文附录.docx": "4a2d437388f61f60850c5da24de3052e462d910a271737a26c793e88693066b5",
+    "支撑材料/AI使用说明.docx": "18301ae9e4e58bf4554f7008d290d91d192d3f879e9ea6472619e97bab66b9e7"
+  },
+  "future_versions_covered": false
+}

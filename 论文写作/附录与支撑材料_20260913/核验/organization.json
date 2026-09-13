@@ -1,0 +1,48 @@
+{
+  "permanent_deletions": 0,
+  "backup": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\历史版本\\整理前备份_20260913_175820",
+  "moves": [
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\原模板重填_20260913",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\历史版本\\原模板重填_20260913",
+      "files": 9,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\建模.docx",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\工作稿\\建模.docx",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\format2026.doc",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\模板\\format2026.doc",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\2026数学建模国赛标准论文Word模板.doc",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\模板\\2026数学建模国赛标准论文Word模板.doc",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\2026数学建模国赛标准论文Word模板_提取文本.txt",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\模板\\2026数学建模国赛标准论文Word模板_提取文本.txt",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\论文题目.docx",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\模板\\论文题目.docx",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    },
+    {
+      "source": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\第一二问_论文完整稿3.pdf",
+      "target": "C:\\Users\\sss\\Desktop\\国赛\\论文写作\\历史版本\\正文草稿\\第一二问_论文完整稿3.pdf",
+      "files": 1,
+      "status": "moved_and_hash_verified"
+    }
+  ]
+}
