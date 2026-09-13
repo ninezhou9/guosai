@@ -40,7 +40,7 @@
     </Box>
 
     {/* 衔接说明 */}
-    <Text style={{ position: 'absolute', top: 288, left: 430, width: 300, fontSize: 15, fontWeight: 'bold', color: '#3D7BD9', textAlign: 'center' }}>全天计划 g_d 固定不变</Text>
+    <Text style={{ position: 'absolute', top: 288, left: 430, width: 300, fontSize: 15, fontWeight: 'bold', color: '#3D7BD9', textAlign: 'center' }}>全天购电计划固定不变</Text>
 
     {/* ---------- 第一阶段节点 ---------- */}
     <Box style={{
@@ -97,7 +97,7 @@
             </Box>
             <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#0E3F8C' }}>固定 80 分位日前线性规划</Text>
         </Box>
-        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>以 80 分位净需求为确定性输入，最小化购电费 Σ p_t g_t；含库存与功率约束；输出全天普通购电计划 g_d</Text>
+        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>以 80 分位净需求为确定性输入，最小化购电费用；含库存与功率约束；输出全天普通购电计划</Text>
     </Box>
 
     <Box style={{
@@ -111,7 +111,7 @@
             </Box>
             <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#0E3F8C' }}>三状态误差模型与转移矩阵</Text>
         </Box>
-        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>标准化误差按 ±0.84 分为三态；全局计数加 1 平滑，再用前后各 3 时段局部计数修正；类内最多 7 个加权样本</Text>
+        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>标准化误差按上下阈值分为三态；全局计数加 1 平滑，再用前后各 3 时段局部计数修正；类内最多 7 个加权样本</Text>
     </Box>
 
     <Box style={{
@@ -125,7 +125,7 @@
             </Box>
             <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#0E3F8C' }}>联合 Bellman 递推与反馈执行</Text>
         </Box>
-        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>161 点库存网格求价值函数 W_t(x,i)，终端系数 κ = 0；每 10 分钟读实测，富余则充电或弃用，缺口则放电＋应急购电</Text>
+        <Text style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.5 }}>161 点库存网格求库存价值函数，终端价值设为零；每 10 分钟读实测，富余则充电或弃用，缺口则放电＋应急购电</Text>
     </Box>
 
     {/* ---------- 底部：口径 与 输出 ---------- */}
@@ -135,7 +135,7 @@
         padding: 14, flexDirection: 'column', gap: 6,
     }}>
         <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#0E3F8C' }}>执行口径与边界条件</Text>
-        <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.45 }}>储能 1200—10800 kWh；充放电功率 ≤5000 kW，效率均 0.9；应急购电按 5 倍电价结算；决策只用当前与过去观测；不强制日末电量回到日初，日末库存作为次日日初连续接续。</Text>
+        <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.45 }}>储能 1200—10800 kWh；充放电功率不超过5000 kW，效率均 0.9；应急购电按 5 倍电价结算；决策只用当前与过去观测；不强制日末电量回到日初，日末库存作为次日日初连续接续。</Text>
     </Box>
 
     <Box style={{
@@ -144,7 +144,7 @@
         padding: 14, flexDirection: 'column', gap: 6,
     }}>
         <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#0E3F8C' }}>输出结果</Text>
-        <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.45 }}>全天普通购电计划 g_d、充放电轨迹、应急购电记录、逐时 SOC 与逐日费用，用于全年账单核算与方案对比。</Text>
+        <Text style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.45 }}>全天普通购电计划、充放电轨迹、应急购电记录、逐时 SOC 与逐日费用，用于全年账单核算与方案对比。</Text>
     </Box>
 
     {/* D 页脚 */}

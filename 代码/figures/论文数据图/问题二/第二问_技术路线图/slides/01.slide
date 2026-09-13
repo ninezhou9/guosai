@@ -95,15 +95,15 @@
         <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>80 分位净需求<br />分时电价<br />输入实际日初库存</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 388, top: 357, width: 224, height: 126, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>日前线性规划<br />min Σ p_t g_t<br />储能 1200—10800<br />功率 ≤5000 kW</Text>
+        <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>日前线性规划<br />最小化购电费用<br />储能 1200—10800<br />限制充放电功率</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 388, top: 497, width: 224, height: 72, background: '#BBD6EE', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>全天购电计划 g_d<br />日内不再修改</Text>
+        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>全天购电计划<br />日内不再修改</Text>
     </Box>
 
     {/* ===== 阶段3 节点 ===== */}
     <Box style={{ position: 'absolute', left: 658, top: 145, width: 224, height: 72, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>三状态误差模型<br />按 ±0.84 分三态</Text>
+        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>三状态误差模型<br />按上下阈值划分类别</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 658, top: 231, width: 224, height: 72, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
         <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>Markov 转移估计<br />全局平滑 + 局部修正</Text>
@@ -112,7 +112,7 @@
         <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>类内加权误差样本<br />每类最多 7 个</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 658, top: 403, width: 224, height: 72, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>终端参数 κ 验证<br />1 月 22—31 日择定</Text>
+        <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>终端价值参数验证<br />1 月 22—31 日择定</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 658, top: 489, width: 224, height: 104, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
         <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>Bellman 递推<br />161 点网格<br />最小化预期应急费</Text>
@@ -123,10 +123,10 @@
         <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>日内反馈执行<br />每 10 分钟读实测<br />富余：优先充电<br />缺口：放电 + 应急</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 928, top: 285, width: 224, height: 88, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 18, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>更新储电量<br />E' = E + 0.9c - b/0.9<br />日末库存 = 次日日初</Text>
+        <Text style={{ fontSize: 18, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>更新储电量<br />计入充放电损耗<br />日末库存传递至次日</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 928, top: 387, width: 224, height: 96, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
-        <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>逐日费用核算<br />普通购电 p·g<br />应急购电 5p·e</Text>
+        <Text style={{ fontSize: 20, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>逐日费用核算<br />普通购电按分时电价<br />紧急购电按五倍电价</Text>
     </Box>
     <Box style={{ position: 'absolute', left: 928, top: 497, width: 224, height: 72, background: '#FFFFFF', border: '1.9px solid #111111', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
         <Text style={{ fontSize: 22, color: '#111111', textAlign: 'center', lineHeight: 1.3 }}>费用与约束核验<br />物理与跨日衔接复核</Text>
