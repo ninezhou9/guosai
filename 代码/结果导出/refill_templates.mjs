@@ -3,7 +3,7 @@ import path from 'node:path';
 import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
 
 const root = path.resolve(import.meta.dirname, '..', '..');
-const work = path.join(root, 'tmp', 'result_template_refill_20260913');
+const work = path.join(root, '代码', '结果导出', '缓存');
 const out = path.join(work, 'filled');
 const preview = path.join(work, 'previews');
 await fs.mkdir(out, { recursive: true });

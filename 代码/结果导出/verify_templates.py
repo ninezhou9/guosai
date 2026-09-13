@@ -7,7 +7,7 @@ from openpyxl import load_workbook
 from openpyxl.utils.datetime import to_excel
 
 ROOT=Path(__file__).resolve().parents[2]
-WORK=ROOT/'tmp/result_template_refill_20260913'
+WORK=ROOT/'代码/结果导出/缓存'
 
 
 def normalized(value):

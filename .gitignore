@@ -8,6 +8,8 @@ env/
 venv/
 .venv/
 代码/.deps/
+代码/结果导出/缓存/
+代码/交付整理/缓存/
 
 # LaTeX
 *.aux

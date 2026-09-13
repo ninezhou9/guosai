@@ -23,8 +23,8 @@
 6. `结果导出/refill_templates.mjs fill`
 7. `结果导出/verify_templates.py`
 8. `结果导出/publish_results.py`：发布五份已核验答案。
-9. `交付整理/sync_materials.py sync`、`pack`：同步最终程序和答案并重建支撑包。
+9. `交付整理/sync_materials.py sync`、`pack`：在交付整理缓存中同步最终程序和答案，向交付目录发布支撑包。
 
 附录内容需要更新时，先运行 `sync_materials.py build`，核对文档后运行 `sync_materials.py sync --include-documents`，再运行 `sync_materials.py pack`。不带 `--include-documents` 的同步仅更新源码、结果和记录。本次按用户确认省略Word分页检查，保留内容、源码与结构核对，实际分页仍标记为未验证；本次确认不自动适用于后续新版本。
 
-计算依赖NumPy、SciPy、LightGBM、openpyxl、Matplotlib；Word编辑及独立PDF排版依赖python-docx、ReportLab、pypdf。Excel回填使用Node和 `@oai/artifact-tool`。本机第二问旧清单中的E盘Anaconda路径已失效，当前补算使用Python313及Codex内置运行时。源码打包不包含运行时、`node_modules`、`.deps`、`__pycache__` 或大型模型缓存。完整重现需原始附件及各问计算生成的缓存，不能只凭支撑包宣称全年重跑通过。
+计算依赖NumPy、SciPy、LightGBM、openpyxl、Matplotlib；Word编辑及独立PDF排版依赖python-docx、ReportLab、pypdf。Excel回填使用Node和 `@oai/artifact-tool`。当前补算使用Python313及Codex内置运行时，旧SARIMA模型专用的项目依赖已移除。回填数据与交付状态分别放在 `结果导出/缓存/`、`交付整理/缓存/`，它们不进入支撑包。完整重现需原始附件及各问计算生成的缓存，不能只凭支撑包宣称全年重跑通过。

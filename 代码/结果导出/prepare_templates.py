@@ -13,7 +13,7 @@ from openpyxl.utils.datetime import to_excel
 from boundary_rules import match_template_day
 
 ROOT=Path(__file__).resolve().parents[2]
-WORK=ROOT/'tmp/result_template_refill_20260913'
+WORK=ROOT/'代码/结果导出/缓存'
 Q2=ROOT/'代码/实验/q2_fresh_20260912/results'
 Q3=ROOT/'代码/实验/q3_revision_a_20260912/results'
 Q4=ROOT/'代码/实验/q4_independent_codex_20260912/results'

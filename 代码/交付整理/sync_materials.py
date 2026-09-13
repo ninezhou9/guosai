@@ -5,13 +5,13 @@ import ast,copy,hashlib,io,json,os,shutil,sys,tokenize,zipfile
 
 ROOT=Path(__file__).resolve().parents[2]
 PACKAGE=ROOT/'论文写作/附录与支撑材料_20260913'
-SUPPORT=PACKAGE/'支撑材料'
-WORK=ROOT/'tmp/materials_sync_20260913'
-REFILL=ROOT/'tmp/result_template_refill_20260913'
+WORK=ROOT/'代码/交付整理/缓存'
+SUPPORT=WORK/'支撑材料'
+REFILL=ROOT/'代码/结果导出/缓存'
 NAMES=['result1.xlsx','result2.xlsx','result3.xlsx','result4-2.xlsx','result4-3.xlsx']
 STEM='论文附录'
 SOURCE_GROUPS={
-    '':('q1_solution.py','运行第一问.ps1'),
+    '':('q1_solution.py',),
     '实验/q2_fresh_20260912':('fresh_engine.py','run_fresh.py','write_report.py','requirements.txt'),
     '实验/q3_revision_a_20260912':('q3_engine.py','run_q3.py','deliver_q3.py'),
     '实验/q4_independent_codex_20260912':('model.py','run.py','deliver.py'),
@@ -115,8 +115,7 @@ def build():
     from docx.oxml.ns import qn
     WORK.mkdir(parents=True,exist_ok=True)
     baseline=PACKAGE/(STEM+'.docx')
-    if not baseline.exists():baseline=PACKAGE/'论文尾部_附录修订版.docx'
-    if not baseline.exists():baseline=ROOT/'论文写作/历史版本/附录_20260913_整理前/论文尾部_附录修订版.docx'
+    assert baseline.is_file(), 'Current appendix is required as the formatting template'
     doc=Document(baseline)
     code_sample=next(p for p in doc.paragraphs if p.text.startswith('def solve('))
     code_properties=copy.deepcopy(code_sample._p.pPr)
@@ -216,7 +215,7 @@ def render_pdf(items,path):
 
 def sync_files():
     WORK.mkdir(parents=True,exist_ok=True)
-    backup=ROOT/'论文写作/历史版本'/('整理前备份_'+datetime.now().strftime('%Y%m%d_%H%M%S'))
+    backup=WORK/'备份'/datetime.now().strftime('%Y%m%d_%H%M%S')
     backup.mkdir(parents=True,exist_ok=False)
     before={}
     def write_target(src,target):
@@ -244,7 +243,7 @@ def sync_files():
         write_target(transformed,target);copied[str(rel)]=digest(source)
         package_hashes[packaged.as_posix()]=digest(target);source_map[str(rel)]=packaged.as_posix()
     if '--include-documents' in sys.argv:
-        for name in [STEM+'.docx',STEM+'.pdf',STEM+'.md']:
+        for name in [STEM+'.docx']:
             write_target(WORK/name,PACKAGE/name)
         write_target(WORK/'AI使用说明.docx',SUPPORT/'AI使用说明.docx')
     (WORK/'sync_state.json').write_text(json.dumps(dict(backup=str(backup),source_hashes=copied,packaged_source_hashes=package_hashes,source_map=source_map),ensure_ascii=False,indent=2),encoding='utf-8')
@@ -274,13 +273,13 @@ def pack(candidate=False):
         assert set(z.namelist())==set(entries) and z.testzip() is None
         for name,p in entries.items():assert hashlib.sha256(z.read(name)).hexdigest()==digest(p)
     if not candidate:
-        for name in [STEM+'.docx',STEM+'.pdf',STEM+'.md']:
+        for name in [STEM+'.docx']:
             assert digest(PACKAGE/name)==digest(WORK/name),('Document not synchronized',name)
         assert digest(SUPPORT/'AI使用说明.docx')==digest(WORK/'AI使用说明.docx')
         shutil.copy2(target,PACKAGE/'支撑材料.zip')
     from pypdf import PdfReader
-    appendix=(WORK if candidate else PACKAGE)/(STEM+'.pdf')
-    audit=(WORK/'候选包核验' if candidate else PACKAGE/'核验');audit.mkdir(exist_ok=True)
+    appendix=WORK/(STEM+'.pdf')
+    audit=WORK/('候选包核验' if candidate else '核验');audit.mkdir(exist_ok=True)
     size=dict(limit_bytes=20000000,support_zip_bytes=target.stat().st_size,appendix_pdf_bytes=appendix.stat().st_size,
       appendix_pdf_pages=len(PdfReader(appendix).pages),remaining_full_paper_pdf_bytes=20000000-target.stat().st_size,
       remaining_body_without_appendix_bytes=20000000-target.stat().st_size-appendix.stat().st_size)

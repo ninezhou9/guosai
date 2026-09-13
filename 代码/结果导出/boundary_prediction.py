@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 Q2 = ROOT / '代码/实验/q2_fresh_20260912'
 Q3 = ROOT / '代码/实验/q3_revision_a_20260912'
 Q4 = ROOT / '代码/实验/q4_independent_codex_20260912'
-WORK = ROOT / 'tmp/result_template_refill_20260913'
+WORK = ROOT / '代码/结果导出/缓存'
 sys.path.append(str(Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/python/Lib/site-packages'))
 
 

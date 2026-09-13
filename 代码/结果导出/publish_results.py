@@ -4,10 +4,10 @@ from datetime import datetime
 import hashlib,json,shutil,sys,zipfile
 
 ROOT=Path(__file__).resolve().parents[2]
-WORK=ROOT/'tmp/result_template_refill_20260913'
+WORK=ROOT/'代码/结果导出/缓存'
 PACKAGE=ROOT/'论文写作/附录与支撑材料_20260913'
-DELIVERY=PACKAGE/'支撑材料/结果'
-RECORDS=PACKAGE/'核验/原模板回填'
+DELIVERY=ROOT/'代码/交付整理/缓存/支撑材料/结果'
+RECORDS=ROOT/'代码/交付整理/缓存/核验/原模板回填'
 NAMES=['result1.xlsx','result2.xlsx','result3.xlsx','result4-2.xlsx','result4-3.xlsx']
 
 
